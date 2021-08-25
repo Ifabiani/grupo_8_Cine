@@ -13,3 +13,12 @@ Integrantes:
 - Juan Manuel Pedrozo:
 
 - Ignacio Fabiani: 34 años, casado y con dos hijos, Milo(3) y Sienna(11meses). Contador público de profesión, pero ahora un estusiasta de la programación. Con ganas de emigrar y conocer nuevos rumbos.
+
+
+Referencias:
+
+- https://complejoteatral.gob.ar/
+- https://www.disclord.se/
+- https://www.multiplex.com.ar/
+- https://www.cinepolis.com.ar/
+- https://www.cinemarkhoyts.com.ar/
