@@ -8,7 +8,7 @@ Integrantes:
 
 - Marcos Corti: 
 
-- Thomas Whitney: 39 años, soltero, con un hijo, Sebastián, que tien 15 años. Trabajo en gastronomía, y me gustaría ver la posibilidad de cambiar de profesión. No se si será la programación, pero es interesante de aprender!
+- Thomas Whitney: 39 años, soltero, con un hijo, Sebastián, que tiene 15 años. Trabajo en gastronomía, y me gustaría ver la posibilidad de cambiar de profesión. No se si será la programación, pero es interesante de aprender!
 
 - Juan Manuel Pedrozo:
 
