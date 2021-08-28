@@ -6,7 +6,7 @@ La aplicación está orientada a un público que desee reservar sus asientos de 
 
 Integrantes:
 
-- Marcos Corti: 
+- Marcos Corti: 36 años, soltero, sin hijos, trabajo en el Poder Judicial de Mendoza, y tengo titulo en leyes. Me gusta mucho la idea de poder trabajar independientemente del lugar fisico en el que estoy!
 
 - Thomas Whitney: 39 años, soltero, con un hijo, Sebastián, que tiene 15 años. Trabajo en gastronomía, y me gustaría ver la posibilidad de cambiar de profesión. No se si será la programación, pero es interesante de aprender!
 
