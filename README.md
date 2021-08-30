@@ -10,7 +10,7 @@ Integrantes:
 
 - Thomas Whitney: 39 años, soltero, con un hijo, Sebastián, que tiene 15 años. Trabajo en gastronomía, y me gustaría ver la posibilidad de cambiar de profesión. No se si será la programación, pero es interesante de aprender!
 
-- Juan Manuel Pedrozo:
+- Juan Manuel Pedrozo:30 años, soltero, Gestor Cultural y Bartender, Trabajo en el sector gastronomico, Entusiasmado  con la idea de adquirir herramietas que potencien tanto mis proyectos como los de otros
 
 - Ignacio Fabiani: 34 años, casado y con dos hijos, Milo(3) y Sienna(11meses). Contador público de profesión, pero ahora un estusiasta de la programación. Con ganas de emigrar y conocer nuevos rumbos.
 
