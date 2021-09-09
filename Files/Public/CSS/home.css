@@ -1,0 +1,201 @@
+*{
+    margin: 0 auto;
+    font-family: "Noto Sans JP";
+    /* border: 1px grey solid; */
+    box-sizing: border-box;
+}
+
+
+.fa-instagram-square{
+    color: white;
+    font-size: 1.5rem;
+    margin:0.2rem;
+    text-align: right;
+}
+
+.fa-facebook-square{
+    color: white;
+    font-size: 1.5rem;
+    margin:0.2rem;
+    text-align: right;  
+}
+
+.fa-twitter-square{
+    color: white;
+   font-size: 1.5rem;
+   margin:0.2rem;
+  
+}
+
+body {
+    background-color: black
+}
+
+header {
+   height: 21.5rem;
+   background-color: black;
+   width:100vw;
+   margin: 0 auto;
+}
+
+
+#nav {
+    background-color: black;
+    height: 5.5rem;
+    text-align: left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 33%;
+    height: 100%;
+    background-color: black;
+    margin:0 auto;  
+    box-sizing: border-box; 
+    flex-grow: 1; 
+}
+
+.fa-bars{
+    color:white;
+    font-size: 2rem;
+    background-color:black;
+    radius:100%;
+    flex-grow:1; 
+    width:33%;
+    text-align:center;
+}
+
+.fa-user-circle{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.fa-search{
+    color: white;
+    font-size: 1.2rem; 
+}
+
+#circle{
+    display:flex;
+    align-items: end;
+}
+
+#carrousel{
+    background-color:black;
+    height: 85%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+main {
+    margin-top: 1.5rem;
+    background-color:black;
+    width: 90vw;
+}
+
+#titulo{
+    color: grey;
+    margin-left: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size:110%;
+}
+
+.peliculas{
+    width:65%;
+    height: 65%;
+}
+
+#peliculas{
+    color: white;
+    background-color:black;
+    width: 95vw;
+    margin:5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#horarios{
+    color: white;
+    background-color:black;
+    width: 95vw;
+    margin:5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+article {
+    display: inline-block;
+    margin:5px;
+    width:90vw;
+    text-align: center;
+    background-color:black;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-size: 85%;
+}
+
+h3 {
+    color:black;
+    background-color:white;
+    width: 65%;
+    font-size:75%;
+}
+
+#menu{
+    text-align: center;
+    background-color: black;
+}
+
+#contenedor{
+    display:flex;
+    justify-content: flex-end;
+    margin:0.1rem;
+    background-color: #10acc7b7;
+}
+
+#contenedor4{
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width:33%;
+}
+
+#centrar{
+    text-align: center;
+    height: 50%;
+    background-color:black;
+}
+
+
+#logo1{
+    width:33%;
+    margin:1px;
+}
+
+#margin{
+    margin:3px;
+}
+
+
+/*.contenedor2{
+    /* display:flex; 
+}
+
+.contenedor1{
+    display:flex;
+}*/
+
+/*@media(min-width:361px){
+    .contenedor1{display:flex}
+    .contenedor2{display:flex}
+    .contenedor3{display:flex}
+}

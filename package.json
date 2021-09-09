@@ -1,0 +1,22 @@
+{
+  "name": "grupo_8_cine",
+  "version": "1.0.0",
+  "description": "La oferta de productos del ecommerce está orientada a simular una boletería de Cine donde los usuarios podrán elegir la película que desean ver de acuerdo a la oferta de ese momento, la sala donde se proyectará y los asientos a elegir para las funciones disponibles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ifabiani/grupo_8_Cine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ifabiani/grupo_8_Cine/issues"
+  },
+  "homepage": "https://github.com/Ifabiani/grupo_8_Cine#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
