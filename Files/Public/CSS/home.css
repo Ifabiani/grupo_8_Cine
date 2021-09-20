@@ -61,7 +61,7 @@ header {
     color:white;
     font-size: 2rem;
     background-color:black;
-    radius:100%;
+    border-radius:100%;
     flex-grow:1; 
     width:33%;
     text-align:center;
@@ -186,14 +186,24 @@ h3 {
 }
 
 
+
 /*.contenedor2{
     /* display:flex; 
 }
 
+
 .contenedor1{
     display:flex;
 }*/
+.cuadrilla{
+display: flex;
+  width: 50%;
+  box-sizing: border-box;
+  border: solid #5B6DCD 10px;
+  margin: 2px;
+  background-color:grey;
 
+}
 /*@media(min-width:361px){
     .contenedor1{display:flex}
     .contenedor2{display:flex}
