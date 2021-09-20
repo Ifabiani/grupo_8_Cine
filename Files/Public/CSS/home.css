@@ -60,8 +60,9 @@ header {
 }
 
 .fa-bars{
-    color:white;
+    color:whitesmoke;
     font-size: 2rem;
+    
     background-color:black;
     flex-grow:1; 
     width:10%;
@@ -100,7 +101,7 @@ main {
 
 #titulo{
     color: grey;
-    margin-left: 0.75rem;
+    margin-left: 3.1rem;
     margin-bottom: 1.5rem;
     font-size:110%;
 }
@@ -111,22 +112,26 @@ main {
 }
 
 #peliculas{
-    color: white;
+    color: rgba(255, 255, 255, 0.527);
     background-color:black;
     width: 90vw;
     margin:5px;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 100;
 }
 
 #horarios{
-    color: white;
+    color: rgba(255, 255, 255, 0.527);
     background-color:black;
     width: 90vw;
     margin:5px;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 100;
 }
+
+
 
 article {
     display: inline-block;
@@ -223,15 +228,18 @@ footer img{
     display:flex;
     justify-content: space-between;
     flex-grow: 0.5;
+    align-items:flex-end;
 }
 
-#footer-container2{
+#footer-container3{
     display:flex;
     justify-content: flex-end;
-    flex-grow: 1;
+    flex-grow: 30;
     align-items: flex-end;
    
 }
+
+
 
 #logo1{
     flex-grow: 0.25
@@ -242,14 +250,15 @@ footer img{
     margin-top: 15px;
     background-color:#10acc7b7;
     width:100%;
-    text-align: justify;
+    /* text-align: justify; */
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #p {
     background-color:transparent;
     color:black;
+    font-weight: 300;
 }
 /*.contenedor2{
     /* display:flex; 
@@ -261,11 +270,40 @@ footer img{
 
 
 
-@media(min-width:361px){
-    /* .contenedor1{display:flex} */
-    /* .contenedor2{display:flex} */
-    /* .contenedor3{display:flex} */
+@media(min-width:768px){
+    #footer-container2{display:flex;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: flex-start;}
+    .contenedor1{display:flex;
+    flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;}
+.peliculas{height:20rem;
+width:12rem}
+h3, h4{
+    width:12rem;
+}
+    .contenedor2{display:content}
+    .contenedor3{display:content}
+    .contenedor4{display:content}
+    .contenedor5{display:content}
+    .contenedor6{display:content}
+    .contenedor7{display:content}
     header{width:80vw;}
     #peliculas{width:80vW}
     #horarios{width:80vw;}
+    footer {height: 24rem;}
+    article{
+        width:13rem;
+    }
+}
+
+/*@media(min-width: 761px){
+    .contenedor1{display:flex;
+    flex-wrap: nowrap;}
+    #carrousel{height: 100%;}
+    #footer-container2{display:flex;
+    align-items: center;}
+    #complejos{flex-grow: 1;}
 }
