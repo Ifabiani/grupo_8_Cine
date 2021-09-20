@@ -9,7 +9,12 @@ app.get('/', (req, res)=>{
     res.sendFile(path.resolve(__dirname, "Views/home.html"))
 });
 
+app.get('/detalle', (req, res)=>{
+    res.sendFile(path.resolve(__dirname, "Views/detalle-de-producto.html"))
+});
+
 app.use(express.static(path.resolve(__dirname,'./Public')));
+
 
 
 

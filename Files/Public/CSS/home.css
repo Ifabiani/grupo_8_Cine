@@ -151,7 +151,30 @@ h3 {
     font-size:75%;
 }
 
-
+h2 {
+    color:black;
+    background-color: white;
+    width: 65%;
+    }
+    
+ul{
+    color: white;
+    list-style-type: none;
+    }    
+ul li{
+    margin-top:7px;
+    text-align: left;
+    }    
+ul strong{
+       margin-right: 10px;
+    }
+.sinopsis{
+    color: white;
+    margin:7vw;
+    text-align: left;
+    text-align: justify;
+  text-justify: inter-word;
+}
 #menu{
     text-align: center;
     background-color: black;
