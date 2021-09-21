@@ -22,3 +22,5 @@ Referencias:
 - https://www.multiplex.com.ar/
 - https://www.cinepolis.com.ar/
 - https://www.cinemarkhoyts.com.ar/
+
+https://trello.com/b/24kI97qC/cine

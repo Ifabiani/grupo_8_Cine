@@ -28,13 +28,15 @@
 }
 
 body {
-    background-color: black
+    background-color: black;
+    width:90vw;
+    
 }
 
 header {
    height: 21.5rem;
    background-color: black;
-   width:100vw;
+   width:90vw;
    margin: 0 auto;
 }
 
@@ -58,13 +60,17 @@ header {
 }
 
 .fa-bars{
-    color:white;
+    color:whitesmoke;
     font-size: 2rem;
+    
     background-color:black;
+<<<<<<< HEAD
     border-radius:100%;
+=======
+>>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
     flex-grow:1; 
-    width:33%;
-    text-align:center;
+    width:10%;
+    text-align:center;    
 }
 
 .fa-user-circle{
@@ -99,7 +105,7 @@ main {
 
 #titulo{
     color: grey;
-    margin-left: 0.75rem;
+    margin-left: 3.1rem;
     margin-bottom: 1.5rem;
     font-size:110%;
 }
@@ -110,22 +116,26 @@ main {
 }
 
 #peliculas{
-    color: white;
+    color: rgba(255, 255, 255, 0.527);
     background-color:black;
-    width: 95vw;
+    width: 90vw;
     margin:5px;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 100;
 }
 
 #horarios{
-    color: white;
+    color: rgba(255, 255, 255, 0.527);
     background-color:black;
-    width: 95vw;
+    width: 90vw;
     margin:5px;
     text-align: center;
     box-sizing: border-box;
+    font-weight: 100;
 }
+
+
 
 article {
     display: inline-block;
@@ -149,6 +159,7 @@ h3 {
     width: 65%;
     font-size:75%;
 }
+
 
 #menu{
     text-align: center;
@@ -185,8 +196,78 @@ h3 {
     margin:3px;
 }
 
+footer i{
+    color: white;
+    background-color:black;
+}
+
+<<<<<<< HEAD
+
+=======
+footer p{
+    color: white;
+    background-color:black;
+    font-weight: 100;
+}
+
+footer h5{
+    color: white;
+    background-color:black;
+    font-weight: 50;
+}
+
+footer{
+    height: 32rem;
+    background-color: black;
+}
+
+#complejos{
+    background-color: black;
+    text-align: center;
+}
+
+footer img{
+    flex-grow: 1;
+}
+
+#footer-container{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-between;
+    flex-grow: 0.5;
+    align-items:flex-end;
+}
+
+#footer-container3{
+    display:flex;
+    justify-content: flex-end;
+    flex-grow: 30;
+    align-items: flex-end;
+   
+}
 
 
+
+#logo1{
+    flex-grow: 0.25
+}
+
+#cierre{
+
+    margin-top: 15px;
+    background-color:#10acc7b7;
+    width:100%;
+    /* text-align: justify; */
+    display:flex;
+    justify-content: space-between;
+}
+
+#p {
+    background-color:transparent;
+    color:black;
+    font-weight: 300;
+}
+>>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
 /*.contenedor2{
     /* display:flex; 
 }
@@ -203,9 +284,50 @@ display: flex;
   margin: 2px;
   background-color:grey;
 
+<<<<<<< HEAD
 }
 /*@media(min-width:361px){
     .contenedor1{display:flex}
     .contenedor2{display:flex}
     .contenedor3{display:flex}
+=======
+
+
+@media(min-width:768px){
+    #footer-container2{display:flex;
+        justify-content: center;
+        flex-grow: 1;
+        align-items: flex-start;}
+    .contenedor1{display:flex;
+    flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;}
+.peliculas{height:20rem;
+width:12rem}
+h3, h4{
+    width:12rem;
+}
+    .contenedor2{display:content}
+    .contenedor3{display:content}
+    .contenedor4{display:content}
+    .contenedor5{display:content}
+    .contenedor6{display:content}
+    .contenedor7{display:content}
+    header{width:80vw;}
+    #peliculas{width:80vW}
+    #horarios{width:80vw;}
+    footer {height: 24rem;}
+    article{
+        width:13rem;
+    }
+>>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
+}
+
+/*@media(min-width: 761px){
+    .contenedor1{display:flex;
+    flex-wrap: nowrap;}
+    #carrousel{height: 100%;}
+    #footer-container2{display:flex;
+    align-items: center;}
+    #complejos{flex-grow: 1;}
 }
