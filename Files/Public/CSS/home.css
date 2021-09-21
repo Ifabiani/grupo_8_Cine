@@ -64,10 +64,7 @@ header {
     font-size: 2rem;
     
     background-color:black;
-<<<<<<< HEAD
     border-radius:100%;
-=======
->>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
     flex-grow:1; 
     width:10%;
     text-align:center;    
@@ -160,7 +157,30 @@ h3 {
     font-size:75%;
 }
 
-
+h2 {
+    color:black;
+    background-color: white;
+    width: 65%;
+    }
+    
+ul{
+    color: white;
+    list-style-type: none;
+    }    
+ul li{
+    margin-top:7px;
+    text-align: left;
+    }    
+ul strong{
+       margin-right: 10px;
+    }
+.sinopsis{
+    color: white;
+    margin:7vw;
+    text-align: left;
+    text-align: justify;
+  text-justify: inter-word;
+}
 #menu{
     text-align: center;
     background-color: black;
@@ -201,9 +221,6 @@ footer i{
     background-color:black;
 }
 
-<<<<<<< HEAD
-
-=======
 footer p{
     color: white;
     background-color:black;
@@ -267,7 +284,6 @@ footer img{
     color:black;
     font-weight: 300;
 }
->>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
 /*.contenedor2{
     /* display:flex; 
 }
@@ -284,13 +300,6 @@ display: flex;
   margin: 2px;
   background-color:grey;
 
-<<<<<<< HEAD
-}
-/*@media(min-width:361px){
-    .contenedor1{display:flex}
-    .contenedor2{display:flex}
-    .contenedor3{display:flex}
-=======
 
 
 @media(min-width:768px){
@@ -320,7 +329,6 @@ h3, h4{
     article{
         width:13rem;
     }
->>>>>>> aacdd25e17bd2f98dc5749671360e98b305d0926
 }
 
 /*@media(min-width: 761px){
@@ -330,4 +338,5 @@ h3, h4{
     #footer-container2{display:flex;
     align-items: center;}
     #complejos{flex-grow: 1;}
+}*/
 }

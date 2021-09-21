@@ -334,6 +334,6 @@ main .lateral .datos-de-complejo img{
         align-items: flex-start;
     }
 .miniatura-imagen-pelicula, .contenedor-miniatura-informacion{
-    width: 45%;
+    width: 50%;
 }
     }
