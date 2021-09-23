@@ -64,6 +64,7 @@ header {
     font-size: 2rem;
     
     background-color:black;
+    border-radius:100%;
     flex-grow:1; 
     width:10%;
     text-align:center;    
@@ -287,9 +288,17 @@ footer img{
     /* display:flex; 
 }
 
+
 .contenedor1{
     display:flex;
 }*/
+.cuadrilla{
+display: flex;
+  width: 50%;
+  box-sizing: border-box;
+  border: solid #5B6DCD 10px;
+  margin: 2px;
+  background-color:grey;
 
 /*trabajo sobre detalle del producto*/
 .contenedor-detalle-1{
@@ -416,4 +425,5 @@ h3, h4{
     #footer-container2{display:flex;
     align-items: center;}
     #complejos{flex-grow: 1;}
+}*/
 }
