@@ -299,7 +299,7 @@ display: flex;
   border: solid #5B6DCD 10px;
   margin: 2px;
   background-color:grey;
-
+}
 /*trabajo sobre detalle del producto*/
 .contenedor-detalle-1{
     /*  border: 1px red solid;*/
@@ -425,5 +425,5 @@ h3, h4{
     #footer-container2{display:flex;
     align-items: center;}
     #complejos{flex-grow: 1;}
+    }
 }*/
-}
