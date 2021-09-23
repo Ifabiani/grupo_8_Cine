@@ -175,10 +175,10 @@ ul strong{
     }
 .sinopsis{
     color: white;
-    margin:7vw;
     text-align: left;
     text-align: justify;
-  text-justify: inter-word;
+    text-justify: inter-word;
+    padding-top: 5px
 }
 #menu{
     text-align: center;
@@ -291,6 +291,51 @@ footer img{
     display:flex;
 }*/
 
+/*trabajo sobre detalle del producto*/
+.contenedor-detalle-1{
+    /*  border: 1px red solid;*/
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+     /* justify-content: space-between;*/
+   
+  }
+  .contenedor-detalle-2{
+   /*   border: 1px green solid;*/
+      display: flex;
+      align-items: center;
+      /*width: 50%;*/
+      margin: 5px 0 20px 0;
+
+  }
+
+
+.contenedor-detalle-3{
+  /*  border: 1px white solid;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.contenedor-detalle-3 h2{
+    text-align:center;
+    padding: 1px;
+    margin-bottom: 10px;
+    
+}
+.boton-detalle{
+    margin: 10px auto;
+    
+}
+.contenedor-detalle-4{
+    /* border: 2px blue solid;*/
+     display: flex;
+     flex-direction: column;
+     width: 80%;
+     margin: 10px auto;
+
+ }
 
 
 @media(min-width:768px){
@@ -299,9 +344,9 @@ footer img{
         flex-grow: 1;
         align-items: flex-start;}
     .contenedor1{display:flex;
-    flex-wrap: wrap;
-flex-direction: row;
-justify-content: space-between;}
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;}
 .peliculas{height:20rem;
 width:12rem}
 h3, h4{
@@ -319,6 +364,48 @@ h3, h4{
     footer {height: 24rem;}
     article{
         width:13rem;
+    }
+
+    .contenedor-detalle-1{
+      /*  border: 1px red solid;*/
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+       /* justify-content: space-between;*/
+     
+    }
+    .contenedor-detalle-2{
+     /*   border: 1px green solid;*/
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+
+    }
+    .contenedor-detalle-3{
+      /*  border: 1px white solid;*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+        
+    }
+    .contenedor-detalle-3 h2{
+        text-align:center;
+        padding: 3px;
+        margin-bottom: 10px;
+        
+    }
+    .contenedor-detalle-4{
+       /* border: 2px blue solid;*/
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 10px auto;
+
+    }
+    .boton-detalle{
+        margin: 10px auto;
+
     }
 }
 

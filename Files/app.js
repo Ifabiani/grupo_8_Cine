@@ -16,7 +16,7 @@ app.get('/detalle', (req, res)=>{
 app.use(express.static(path.resolve(__dirname,'./Public')));
 
 app.get('/registro', (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "Views/registro.html"))
+    res.sendFile(path.resolve(__dirname, "Views/registro.html")) 
 });
 
 app.get('/ingresar', (req, res)=>{
