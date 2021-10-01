@@ -8,10 +8,8 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.13"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
