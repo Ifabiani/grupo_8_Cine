@@ -276,16 +276,7 @@ main .lateral .datos-de-complejo img{
           align-items: center;
           box-sizing: border-box;
       }
-  .barrita-de-estado{
-    width:100%;
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #708599;
-    font-size: 80%;
-    align-self: center;
-    border: solid #5B6DCD 2px;
-  }
+  
 
   /*.segundo {
     display: flex;
