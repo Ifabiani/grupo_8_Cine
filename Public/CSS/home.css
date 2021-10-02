@@ -67,6 +67,13 @@ header {
    margin:0.2rem;
 }
 
+#contenedor {
+    display:flex;
+    justify-content: flex-end;
+    margin:0.1rem;
+    background-color: #10acc7b7;
+}
+
 #nav {
     background-color: black;
     height: 5.5rem;
@@ -74,6 +81,7 @@ header {
     display:flex;
     align-items: center;
     justify-content: center;
+    width: 90vw;
 }
 
 #logo {
@@ -105,6 +113,11 @@ header {
     font-size: 1.2rem; 
 }
 
+.fa-shopping-cart {
+    color: white;
+    font-size: 1.2rem; 
+}
+
 #circle {
     display:flex;
     align-items: end;
@@ -112,16 +125,9 @@ header {
 
 #carrousel {
     background-color:black;
-    height: 85%;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
-}
-
-#contenedor {
-    display:flex;
-    justify-content: flex-end;
-    margin:0.1rem;
-    background-color: #10acc7b7;
 }
 
 #contenedor4 {
@@ -222,6 +228,13 @@ h3 {
 
 /* ------------------------detalle main-------------------------- */
 
+#titulo-detalle {
+    color: grey;
+    margin-left: 0.0750rem;
+    margin-bottom: 1.5rem;
+    font-size:110%;
+}
+
 .contenedor-detalle-1 {
       display: flex;
       flex-wrap: wrap;
@@ -252,7 +265,8 @@ h3 {
 }
 
 .boton-detalle {
-      margin: 10px auto;
+      margin: 15px auto;
+      margin-bottom: 25px;
       padding: 5px;      
 }
 
@@ -264,28 +278,35 @@ h3 {
 }
       
 ul {
-    color: white;
+    /* color: white; */
     list-style-type: none;
 }    
 
 ul li {
     margin-top:7px;
     text-align: left;
-    font-weight: 100;
+    font-weight: 50;
+    color: rgba(248, 237, 237, 0.712);
 }   
 
 ul strong {
        margin-right: 10px;
+       color: rgba(248, 237, 237, 0.842);
+       font-weight: 50;
 }
 
 .sinopsis {
-    color: white;
-    text-align: left;
+    color: rgba(248, 237, 237, 0.712);
+    font-weight: 100;
     text-align: justify;
     text-justify: inter-word;
     padding-top: 5px;
     margin-right:10px;
     margin-bottom: 25px;
+}
+
+.sinopsis strong {
+    color: rgba(248, 237, 237, 0.842);
 }
 
 /* ------------------------carrito main-------------------------- */
@@ -581,52 +602,62 @@ footer img {
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 88vw;
 }
 
-.peliculas{
+.peliculas {
     height:20rem;
     width:12rem
 }
 
-h3, h4{
+h3, h4 {
     width:12rem;
 }
 
-.contenedor2{
+.contenedor2 {
     display:content
 }
 
-.contenedor3{
+.contenedor3 {
     display:content
 }
 
-.contenedor4{
+.contenedor4 {
     display:content
 }
 
-.contenedor5{
+.contenedor5 {
     display:content
 }
 
-.contenedor6{
+.contenedor6 {
     display:content
 }
 
-.contenedor7{
+.contenedor7 {
     display:content
 }
 
-header{
-    width:80vw;
+header {
+    width:60vw;
+}
+
+#nav {
+    width:60vw;
+    height: 6.5rem;
 }
 
 #peliculas{
-    width:80vW}
+    width:60vW}
 
 
 #horarios{
-    width:80vw;
+    width:60vw;
+}
+
+#titulo {
+    margin-left: 2rem;
 }
 
 footer {
@@ -635,6 +666,14 @@ footer {
 
 article{
     width:13rem;
+}
+
+.detalle-main{
+    width: 72vw;
+}
+
+.contenedor-detalle-4 {
+    width: 100%;
 }
 
 /* .contenedor-detalle-1 {
@@ -708,12 +747,21 @@ article{
 } */
 }
 
-/*@media(min-width: 761px){
-    .contenedor1{display:flex;
-    flex-wrap: nowrap;}
-    #carrousel{height: 100%;}
-    #footer-container2{display:flex;
-    align-items: center;}
-    #complejos{flex-grow: 1;}
-    }
-}*/
+@media(min-width:1200px) {
+
+.contenedor1{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 66vw;
+}
+
+#titulo {
+    margin-left: 10rem;
+}
+
+.detalle-main{
+    width: 60vw;
+}
+}
