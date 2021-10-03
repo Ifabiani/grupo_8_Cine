@@ -30,10 +30,10 @@ body {
     font-family: "Noto Sans JP" ;
     color:grey;
     background-color: black;
-    height: 640px;
-    display: flex;
+    height: 740px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 /* ----------------------------------------------------------- */
@@ -84,13 +84,26 @@ header {
     width: 90vw;
 }
 
+.nav2 {
+    color:rgba(255, 255, 255, 0.527);
+    display:none;
+    font-size: 80%;
+    border-top: solid rgba(255, 255, 255, 0.527) 3px;
+}
+
+
 #logo {
     width: 33%;
-    height: 100%;
+    height: 85%;
     background-color: black;
     margin:0 auto;  
     box-sizing: border-box; 
     flex-grow: 1; 
+}
+
+#logo-registro {
+    width: 100%;
+    display:none;
 }
 
 .fa-bars {
@@ -239,6 +252,7 @@ h3 {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
 }
 
 .contenedor-detalle-2 {
@@ -253,6 +267,10 @@ h3 {
       align-items: center;
       margin-bottom: 10px;
 }
+
+/* .imagen-detalle{
+    align-self: center;
+} */
 
 .contenedor-detalle-3 h2 {
       text-align:center;
@@ -453,11 +471,24 @@ h1 {
     font-weight: 700;
 }
 
-form {
+#form-registro {
     background-color: white;
     padding:40px 0;
     box-shadow: 0 0 6px gold;
     border-radius: 10px;
+    height: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#form-login {
+    background-color: white;
+    padding:40px 0;
+    box-shadow: 0 0 6px gold;
+    border-radius: 10px;
+    height: 60%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .form {
@@ -495,6 +526,12 @@ label {
 }
 
 input:focus~label {
+    top:-14px;
+    font-size: 12px;
+    color:royalblue;
+}
+
+#fecha {
     top:-14px;
     font-size: 12px;
     color:royalblue;
@@ -585,6 +622,7 @@ footer img {
     font-weight: 300;
 }
 
+
 /* ----------------------------------------------------------- */
 
 /* medias queries */
@@ -596,6 +634,44 @@ footer img {
     justify-content: center;
     flex-grow: 1;
     align-items: flex-start;
+}
+
+.fa-bars {
+    display:none;
+}
+
+.body2 {
+    font-family: "Noto Sans JP" ;
+    color:grey;
+    background-color: black;
+    height: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 {
+    color:white;
+    display:flex;
+    margin-bottom: 10px;
+}
+
+.header-registro{
+    display:none;
+}
+
+#logo {
+    width: 12%;
+    height: 100%;
+    background-color: black;
+    margin:0 auto;  
+    box-sizing: border-box; 
+    flex-grow: 1; 
+}
+
+#logo-registro{
+    width: 70%;
+    display: inline;
 }
 
 .contenedor1{
@@ -641,6 +717,7 @@ h3, h4 {
 
 header {
     width:60vw;
+    height: 100%;
 }
 
 #nav {
@@ -658,12 +735,17 @@ header {
 
 #titulo {
     margin-left: 2rem;
+    margin-top:5px;
 }
 
 footer {
     height: 24rem;
 }
 
+.footer-registro {
+    display: none
+}
+ 
 article{
     width:13rem;
 }

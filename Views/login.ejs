@@ -5,12 +5,12 @@
 
 
 <body class="body2">
-    
+    <span class="header-registro"><%-include ('./partials/header')%></span>
     <div>
-        <img id="logo" src="\Images\logo-1.png" alt="">
+        <img id="logo-registro" src="\Images\logo-1.png" alt="">
 
     </div>
-    <form action="" method="POST" id=form>
+    <form action="" method="POST" id=form-login>
         <div class="form">
 
             <h1>INGRESAR</h1>
@@ -23,13 +23,13 @@
                 <input type="Password" name="" id="name" required><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
-            <button class="button2" type="submit">Suscribirte</button>
+            <button class="button2" type="submit">Ingresar</button>
 
         </div>
 
     </form>
 
-
+    <span class="footer-registro"><%-include ('./partials/footer')%></span>
     
 
 </body>
