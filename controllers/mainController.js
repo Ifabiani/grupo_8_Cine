@@ -20,6 +20,12 @@ const mainController = {
     registro: (req, res) => {
         res.render("registro")},
 
+    crear: (req, res) => {
+        res.render("crearProducto")},
+
+    editar: (req, res) => {
+        res.render("editarProducto")},
+
 }
 
 module.exports = mainController;
