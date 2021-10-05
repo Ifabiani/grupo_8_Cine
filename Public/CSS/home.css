@@ -559,14 +559,22 @@ input:focus~label {
 .button2 {
     font-family: "Noto Sans JP";
     border: none;
+    border-radius: 15px ;
     display: block;
-    width: 84%;
+    width: 42%;
     margin: 10px auto;
     height: 42px;
     font-size: 16px;
     cursor: pointer;
     background-color: slategray; 
 }
+.botones{
+    display:flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    
+    
+    }
 
 
 /* ----------------------------------------------------------- */
