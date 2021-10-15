@@ -189,6 +189,9 @@ header {
 
 
 /* ------------------------carrito header-------------------------- */
+.header-carrito{
+    height: 10rem;
+}
 
 .barrita-de-estado {
     width:100%;
