@@ -99,7 +99,7 @@ header {
     color:rgba(255, 255, 255, 0.527);
     display:none;
     font-size: 80%;
-    border-top: solid rgba(255, 255, 255, 0.527) 8px;
+    /* border-top: solid rgba(255, 255, 255, 0.527) 8px; */
 }
 
 
