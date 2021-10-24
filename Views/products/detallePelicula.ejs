@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include ('../partials/head')%>
+
+
+<body>
+    <%-include ('../partials/header')%>
+    <main class="detalle-main">
+        <p id="titulo-detalle">DETALLE DE LA PELICULA</p>
+        <div class="contenedor-detalle-1">
+            <div class="contenedor-detalle-2">
+            
+                <img class="peliculas" src="\Images\<%=product.imagen%>" alt="">
+            </div>
+            <div class="contenedor-detalle-3"> 
+                    <h2><%=product.name.toUpperCase()%></h2>
+                                       
+                <ul>
+                    <li><strong>Título original:</strong> <%=product.name%> </li>   
+                    <li><strong>Orígen:</strong><%=product.origen%> </li>
+                    <li><strong>Género:</strong> <%=product.genero%> </li>
+                    <li><strong>Director:</strong><%=product.director%> </li>
+                    <li><strong>Actores:</strong> <%=product.actores%> </li>
+                    <li><strong>Calificación:</strong> <%=product.calificacion%></li>
+                    <li><strong>Duración:</strong> <%=product.duracion%> </li>
+            
+
+                </ul>
+            
+            </div>     
+            <div class="contenedor-detalle-4">  
+                <div class="sinopsis">
+                    <strong> Sinopsis:</strong> <%=product.sinopsis%>
+                </div>  
+                <div>
+                <button class="boton-detalle" type="submit">Comprar entrada</button>
+                </div>
+            </div>
+            
+        </div>
+
+                </article>
+            </div>
+
+    </main>
+    <%- include ('../partials/footer')%>
+</body>
+
+</html>

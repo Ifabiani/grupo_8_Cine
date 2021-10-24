@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include ('../partials/head')%>
+
+
+<body>
+    <%-include ('../partials/header')%>
+
+    <!-- listar los productos -->
+
+    <% products.forEach(function(product){%>
+
+        <article>
+            <img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt="">
+            <h3>ESTRENO</h3>
+            <h4>A PUERTAS CERRADAS</h4>
+        </article>
+
+        <%})%>
+
+        <%- include ('../partials/footer')%>
+

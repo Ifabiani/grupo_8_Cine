@@ -1,0 +1,39 @@
+[
+    
+    {"id":1,
+    "name":"Ignacio",
+    "apellido":"Fabiani",
+    "email" : "ignaciofabiani@gmail.com",
+    "password" : "ignacio123",
+    "categoria" : "administrador",
+    "imagen" : "avatar-1.jpg"    
+    },
+
+    {"id":2,
+    "name":"Thomas",
+    "apellido":"Whitney",
+    "email" : "tomwhitney81@gmail.com",
+    "password" : "thomas123",
+    "categoria" : "administrador",
+    "imagen" : "avatar-2.jpg"    
+    },
+
+    {"id":3,
+    "name":"Marcos",
+    "apellido":"Corti",
+    "email" : "marcosarian@hotmail.com",
+    "password" : "marcos123",
+    "categoria" : "administrador",
+    "imagen" : "avatar-3.jpg"    
+    },
+
+    {"id":3,
+    "name":"Juan Manuel",
+    "apellido":"Pedrozo",
+    "email" : "juanmapedrozo@gmail.com",
+    "password" : "juanma123",
+    "categoria" : "administrador",
+    "imagen" : "avatar-4.jpg"    
+    }
+
+]
