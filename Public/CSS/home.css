@@ -102,6 +102,9 @@ header {
     /* border-top: solid rgba(255, 255, 255, 0.527) 8px; */
 }
 
+ul a{
+    text-decoration:none;
+}
 
 #logo {
     width: 33%;
@@ -110,6 +113,7 @@ header {
     margin:0 auto;  
     box-sizing: border-box; 
     flex-grow: 1; 
+    
 }
 
 #logo-registro {
@@ -215,6 +219,11 @@ main {
     margin-top: 1.5rem;
     background-color:black;
     width: 90vw;
+}
+
+.main-home{
+    width: 90vw;
+    text-align: center;
 }
 
 #titulo {
@@ -715,13 +724,13 @@ footer img {
     display: inline;
 }
 
-.contenedor1{
+/* .contenedor1{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     width: 88vw;
-}
+} */
 
 .peliculas {
     height:20rem;
@@ -732,7 +741,7 @@ h3, h4 {
     width:12rem;
 }
 
-.contenedor2 {
+/* .contenedor2 {
     display:content
 }
 
@@ -754,7 +763,7 @@ h3, h4 {
 
 .contenedor7 {
     display:content
-}
+} */
 
 header {
     width:60vw;

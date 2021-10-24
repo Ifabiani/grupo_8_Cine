@@ -8,7 +8,19 @@
     <%- include ('./partials/header')%>
     <main>
         <p id="titulo">PELICULAS</p>
-        <div class="contenedor1">
+        <div class="main-home">
+        <% products.forEach(function(product){%>
+
+            <article>
+                <img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt="">
+                <h3>ESTRENO</h3>
+                <h4>A PUERTAS CERRADAS</h4>
+            </article>
+    
+            <%})%>
+        </div>
+
+        <!-- <div class="contenedor1">
             <div class="contenedor2">
                 <article>
                     <img class="peliculas" src="\Images\pelicula-1.jpg" alt="">
@@ -81,7 +93,7 @@
                     <h4>A PUERTAS CERRADAS</h4>
                 </article>
             </div>
-        </div>
+        </div> -->
     </main>
     <%- include ('./partials/footer')%>
 </body>
