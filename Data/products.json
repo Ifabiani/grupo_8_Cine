@@ -142,17 +142,5 @@
   "calificacion": "SAM 13 C/R",
   "duracion": "139 minutos",
   "sinopsis": "Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo."
- },
- {
-  "id": 13,
-  "name": "Titanic",
-  "origen": "Estados Unidos",
-  "genero": "Drama",
-  "director": "James Cameron",
-  "actores": "Leonardo DiCaprio, Kate Winslet, Billy Zane",
-  "calificacion": "SAM 13 C/R",
-  "duracion": "194 minutos",
-  "sinopsis": "Jack es un joven artista que gana un pasaje para viajar a América en el Titanic, el transatlántico más grande y seguro jamás construido.",
-  "imagen": "pelicula-13"
  }
 ]

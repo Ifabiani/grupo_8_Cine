@@ -36,13 +36,16 @@ router.get('/:id', controller.detallePelicula);
 router.get('/edit/:id', controller.editar);
 
 //Ruta que edita un producto en particular
-router.put('/editar/:id', upload.single('imagen'), controller.update);
+router.post('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un producto en particular
-router.delete('/eliminar/:id', controller.eliminar);
+router.get('/eliminar/:id', controller.eliminar);
 
 
 router.get('/carrito', controller.carrito);
+
+
+
 
 
 

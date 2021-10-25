@@ -10,10 +10,10 @@
     <span class="header-registro"><%-include ('../partials/header')%></span>
     
     <div>
-        <img id="logo-registro" src="\Images\logo-1.png" alt="">
+        <a href="http://localhost:3031/"><img id="logo-registro" src="\Images\logo-1.png" alt=""></a>
 
     </div>
-    <form action="/productos/editar/<%= productToEdit.id %>?_method=PUT" id=form-registro method="POST" enctype="multipart/form-data >
+    <form action="/productos/editar/<%= productToEdit.id %>" id="form-registro" method="POST" enctype="multipart/form-data" >
         <div class="form">
 
             <h1>EDITAR PRODUCTO</h1>
@@ -22,7 +22,7 @@
                 <label for="">Nombre película</label>
             </div>
             <div class="grupo">
-                <input type="file" name="imagen" id="name"  ><span class="barra"></span>
+                <input type="file" name="imagen" id="name" value="<%= productToEdit.origen%>"  ><span class="barra"></span>
                 <label for="" id="imagen1">Imagen película</label>
             </div>
             <div class="grupo">

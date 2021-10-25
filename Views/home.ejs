@@ -12,7 +12,7 @@
         <% products.forEach(function(product){%>
 
             <article>
-                <img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt="">
+                <a href="http://localhost:3031/productos/<%=product.id%>"><img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt=""></a>
                 <h3>ESTRENO</h3>
                 <h4>A PUERTAS CERRADAS</h4>
             </article>

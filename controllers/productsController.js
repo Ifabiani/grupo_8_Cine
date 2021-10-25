@@ -8,12 +8,23 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 const productController = {
     //Controlador que muestra todos los productos (GET)
     productos: (req, res) => {
+        const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
         res.render(path.join(__dirname,'../Views/products/productos.ejs'), {products : products})
     },
 
     //Controlador de la ruta que trae el formulario para crear productos (GET)
     crear: (req, res) => {
         res.render(path.join(__dirname,'../Views/products/crearProducto.ejs'))},
+
+
+     //Ruta /productos/:id que muestra el detalle de una pelicula seleccionada (GET)
+     detallePelicula: (req, res) => {
+        let id = req.params.id
+		let product = products.find(product => product.id == id)
+
+        res.render(path.join(__dirname,'../Views/products/detallePelicula.ejs'), {product : product})
+    },
+    
 
     //Controlador que crea un nuevo producto(PUT)
     store: (req, res) => {
@@ -42,7 +53,7 @@ const productController = {
 		)
 
 		res.render(path.join(__dirname,'../Views/products/editarProducto.ejs'), {productToEdit})
-    },
+        },
 
     //Controlador que edita un producto existente (PATH)
 
@@ -50,14 +61,15 @@ const productController = {
         let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
 
+		
         
 		productToEdit = {
 			id: productToEdit.id,
+            imagen: productToEdit.imagen,
 			...req.body,
-			image: productToEdit.image,
+			
 		};
-		console.log(productToEdit);
-        
+        // console.log(productToEdit);
 		
 		let newProducts = products.map(product => {
 			if (product.id == productToEdit.id) {
@@ -77,19 +89,12 @@ const productController = {
 		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, ' '));
 		res.redirect('/productos');
 	},
-
-    //Ruta /productos/:id que muestra el detalle de una pelicula seleccionada (GET)
-    detallePelicula: (req, res) => {
-        let id = req.params.id
-		let product = products.find(product => product.id == id)
-
-        res.render(path.join(__dirname,'../Views/products/detallePelicula.ejs'), {product : product})
-    },
-    
+   
     carrito: (req, res) => {
-        res.render(path.join(__dirname,'../Views/products/carrito.ejs'))
+        res.render(path.join(__dirname,'../Views/products/carrito.ejs'), {products:products})
     },
 
+    
 }
 
 module.exports = productController;

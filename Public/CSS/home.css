@@ -106,14 +106,19 @@ ul a{
     text-decoration:none;
 }
 
+#logo3{
+    height:100%;
+    width: 10rem;
+}
+
 #logo {
-    width: 33%;
-    height: 85%;
+    width: 100%;
+    height: 100%;
     background-color: black;
     margin:0 auto;  
     box-sizing: border-box; 
     flex-grow: 1; 
-    
+    text-decoration: none;
 }
 
 #logo-registro {
@@ -269,6 +274,11 @@ h3 {
     margin-left: 0.0750rem;
     margin-bottom: 1.5rem;
     font-size:110%;
+}
+
+.detalle-peliculas {
+    width:65%;
+    height: 65%;
 }
 
 .contenedor-detalle-1 {
@@ -710,8 +720,14 @@ footer img {
     display:none;
 }
 
+#logo3{
+    height:100%;
+    width: 18rem;
+}
+
+
 #logo {
-    width: 12%;
+    width: 100%;
     height: 100%;
     background-color: black;
     margin:0 auto;  
@@ -735,6 +751,11 @@ footer img {
 .peliculas {
     height:20rem;
     width:12rem
+}
+
+.detalle-peliculas {
+    height:17rem;
+    width:10rem
 }
 
 h3, h4 {
@@ -896,4 +917,5 @@ article{
 .detalle-main{
     width: 60vw;
 }
+
 }
