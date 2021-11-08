@@ -24,10 +24,10 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 //Ruta que trae el formulario de registro
-router.get('/registro', controller.registro);
+router.get('/registrar', controller.registro);
 
 //Ruta que carga el formulario de registro
-router.post('/', upload.single('imagen'), validacionesRegistro, controller.crear);
+router.post('/registrar', upload.single('imagen'), validacionesRegistro, controller.crear);
 
 //Ruta que trae un usuario a editar
 router.get('/editar/:id', controller.editar);
@@ -42,7 +42,7 @@ router.get('/eliminar/:id', controller.eliminar);
 router.get('/login', controller.login);
 
 //Ruta que logea a un usuario
-router.post('/logeo', controller.logeo);
+router.post('/login', upload.single('imagen'), validacionesLogin, controller.logeo);
 
 
 

@@ -89,17 +89,17 @@ const userController = {
 
     logeo:(req, res)=> {
 
-    // const errors = validationResult(req);
+    const errors = validationResult(req);
 
-    // if (errors.isEmpty()){
-    // res.redirect('/usuarios/registro')
-    // }else{
-    //     res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array()})
+    if (errors.isEmpty()){
+    res.redirect('/usuarios/registro')
+    }else{
+        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array()})
 
-    // }}
+    }}
 
-    console.log(req.body)
-    }
+    
+    
 
 }
 
