@@ -4,9 +4,11 @@
   "description": "La oferta de productos del ecommerce está orientada a simular una boletería de Cine donde los usuarios podrán elegir la película que desean ver de acuerdo a la oferta de ese momento, la sala donde se proyectará y los asientos a elegir para las funciones disponibles.",
   "main": "app.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.1.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-validator": "^6.13.0",
     "method-override": "^3.0.0",
     "multer": "^1.4.3",
     "nodemon": "^2.0.13"

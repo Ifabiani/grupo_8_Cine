@@ -30,7 +30,7 @@ body {
     font-family: "Noto Sans JP" ;
     color:grey;
     background-color: black;
-    height: 740px;
+    height: 98vh;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -41,7 +41,7 @@ body {
     font-family: "Noto Sans JP" ;
     color:grey;
     background-color: black;
-    height: 100%;
+    height: 95%;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -509,7 +509,7 @@ h1 {
     padding:40px 0;
     box-shadow: 0 0 6px gold;
     border-radius: 10px;
-    height: 95%;
+    height: 98%;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -597,6 +597,23 @@ input:focus~label {
     
     
     }
+
+.grupo1{ position:relative; 
+    margin-left: 0rem;
+    margin-top: 2rem;
+    flex-grow: -2;  
+}
+
+.grupo2{ 
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.select{ 
+    flex-grow: 0;   
+
+}
 
 
 /* ----------------------------------------------------------- */
@@ -693,10 +710,11 @@ footer img {
     font-family: "Noto Sans JP" ;
     color:grey;
     background-color: black;
-    height: 740px;
+    height: 98%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .body3 {

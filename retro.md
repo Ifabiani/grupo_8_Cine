@@ -26,3 +26,11 @@ Aclaraciones sobre el sprint 4:
 
 - las rutas de PUT y DELETE las tuvimos que hacer con GET y POST porque no nos tomaban los métodos. No sabemos si por error de aplicación del metho-override, de versiones o qué.
 - se rompió la ruta de /productos/carrito. Y cualquier otra ruta que se agregue, tira el mismo error en la vista detallePelicula.ejs que nada tiene que ver con la ruta de carrito o cualquier otra que se cree. No sabemos de dónde viene el error.
+
+Retro del Sprint 4
+
+Comenzar a hacer: trabajar con ramas, creemos que es una buena alternativa para ser creativos sin romper el proyecto principal
+Hacer más: reuniones periódicas, ya lo implementamos y lo reforzaremos.
+Continuar haciendo: la división de tareas y el trabajo independiente.
+Hacer menos: nada para comentar
+Dejar de hacer: nada para comentar

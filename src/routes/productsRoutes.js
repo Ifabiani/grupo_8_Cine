@@ -32,10 +32,10 @@ router.post('/', upload.single('imagen'), controller.store)
 //Ruta que muestra el detalle de una pelicula en particular
 router.get('/:id', controller.detallePelicula);
 
-//Ruta que trae el formulario para editar una pelocula
+//Ruta que trae el formulario para editar una película
 router.get('/edit/:id', controller.editar);
 
-//Ruta que edita un producto en particular
+//Ruta que edita una película en particular
 router.post('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un producto en particular

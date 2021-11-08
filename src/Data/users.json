@@ -1,0 +1,138 @@
+[
+ {
+  "id": 1,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "email": "ignaciofabiani@gmail.com",
+  "password": "ignacio123",
+  "categoria": "administrador",
+  "imagen": "avatar-1.jpg"
+ },
+ {
+  "id": 2,
+  "nombre": "Thomas",
+  "apellido": "Whitney",
+  "email": "tomwhitney81@gmail.com",
+  "password": "thomas123",
+  "categoria": "administrador",
+  "imagen": "avatar-2.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Marcos",
+  "apellido": "Corti",
+  "email": "marcosarian@hotmail.com",
+  "password": "marcos123",
+  "categoria": "administrador",
+  "imagen": "avatar-3.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Juan Manuel",
+  "apellido": "Pedrozo",
+  "email": "juanmapedrozo@gmail.com",
+  "password": "juanma123",
+  "categoria": "administrador",
+  "imagen": "avatar-4.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$ZeTH7Ki02gTPG0KpiBRhVu20Ea6Bc6fdbIJLna62MKtRz5BhauXRS",
+  "categoria": "",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 6,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$ae0OXxDZ2lGpBu.z9FHwKeFfEQS3/qdw9XxfieljpB4rfbN1LB9i.",
+  "categoria": "",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 7,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2001-01-01",
+  "email": "ignacio@estudiodfabiani.com.ar",
+  "password": "$2a$10$CXGFLzLjDjvEEar.z4O4lOfJlPDlkyTVTPOKIOgL/0vn5YWNF5kDS",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 8,
+  "nombre": "Ignacio 3",
+  "apellido": "Fabiani",
+  "nacimiento": "2001-01-01",
+  "email": "ignacio@estudiodfabiani.com.ar",
+  "password": "$2a$10$r9EI0cuiyfvBJ9Sp4TGdvOyES1DBR9NZ4VQITwMyUTiQYyDYELqPS",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 9,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$3nV/90iugZ4IXoDddlHD0errKCMmiloOUsL8DFK/QSruYw42KJodq",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 10,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$buN.jF1YuxCtFn0lZ5m9F.xoN9Vvc0RBiRnA3LAAY5AzoGxWSjp1e",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 11,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$dPSRDS8Ueoz3PPwM4eK8yerHL/wWqgTxNtB6V.HTeCo8lfA0cw/eu",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 12,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$RBGELEqwfZMIQkA1TtoTmedEfrJDQCAo3Pl3upYVOEQBi//Cj07I6",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 13,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$wKNGbqmkQJ.ujHG7jjZZ0umvJ77u9XethrzO2j4I4QxYXPnCHmNGq",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 14,
+  "nombre": "",
+  "apellido": "",
+  "nacimiento": "",
+  "email": "",
+  "password": "$2a$10$x8RmkxLBfoT.cns/C6IRZugc8p74CkGVw1HQlt7.5adnPY2tTHpvi",
+  "categoria": "Elige una opción",
+  "imagen": "default-image.png"
+ }
+]
