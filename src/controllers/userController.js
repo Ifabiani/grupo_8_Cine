@@ -32,7 +32,7 @@ const userController = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
         res.redirect('/usuarios/registro');
     }else{
-        res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array()})                    
+        res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
     },
 
@@ -94,7 +94,7 @@ const userController = {
     if (errors.isEmpty()){
     res.redirect('/usuarios/registro')
     }else{
-        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array()})
+        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
 
     }}
 

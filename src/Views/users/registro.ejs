@@ -22,32 +22,32 @@
                     <p id="error"><%=error.msg%></p>
                     <%})}%>
             <div class="grupo">
-                <input type="text" name="nombre" id="name" ><span class="barra"></span>
+                <input type="text" name="nombre" id="name" value="<%= locals.old && old.nombre ? old.nombre : null %>"><span class="barra"></span>
                 <label for="">Nombre</label>               
             </div>
             <div class="grupo">
-                <input type="text" name="apellido" id="name" ><span class="barra"></span>
+                <input type="text" name="apellido" id="name" value="<%= locals.old && old.apellido ? old.apellido : null %>"><span class="barra"></span>
                 <label for="">Apellido</label>
             </div>
             <div class="grupo">
-                <input type="date" name="nacimiento" id="name" id="fecha" ><span class="barra"></span>
+                <input type="date" name="nacimiento" id="name" id="fecha" value="<%= locals.old && old.nacimiento ? old.nacimiento : null %>" ><span class="barra"></span>
                 <label for="" id="fecha">Fecha de nacimiento</label>
             </div>
             <div class="grupo">
-                <input type="email" name="email" id="name" ><span class="barra"></span>
+                <input type="email" name="email" id="name" value="<%= locals.old && old.email ? old.email : null %>" ><span class="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="grupo">
-                <input type="password" name="password" id="name" ><span class="barra"></span>
+                <input type="password" name="password" id="name" value="<%= locals.old && old.password ? old.password : null %>"><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div >
             
             <div class="grupo2">
                 <label class="grupo1" class="select2" for="">Categoria</label>
                <select name="categoria"  id="select">
-                <option >Elige una opción</option>
-               <option value="Administrador" >Administrador</option>
-               <option value="Usuario" >Usuario</option>
+                <option value="">Elige una opción</option>
+               <option value="Administrador" <%= locals.old && old.categoria === "Administrador" ? 'selected' : ' ' %> >Administrador</option>
+               <option value="Usuario" <%= locals.old && old.categoria === 'Usuario' ? 'selected' : ' ' %> >Usuario</option>
                 </select>
                 
             </div >
