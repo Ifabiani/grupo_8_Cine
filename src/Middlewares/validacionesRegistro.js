@@ -6,7 +6,7 @@ let validacionesRegistro = [
     body('email').notEmpty().withMessage('El campo email no puede estar vacío').bail().isEmail().withMessage('Debes colocar un email válido'),
     body('password').notEmpty().withMessage('El campo password no puede estar vacío').bail().isLength({min:8}),
     body('categoria').notEmpty().withMessage('Debe seleccionar al menos una categoría'),
-    body('imagen').notEmpty().withMessage('Debe cargar una imagen')
+    // body('imagen').notEmpty().withMessage('Debe cargar una imagen')
 ]
 
 module.exports = validacionesRegistro

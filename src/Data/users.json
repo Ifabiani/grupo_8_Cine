@@ -134,5 +134,25 @@
   "password": "$2a$10$x8RmkxLBfoT.cns/C6IRZugc8p74CkGVw1HQlt7.5adnPY2tTHpvi",
   "categoria": "Elige una opción",
   "imagen": "default-image.png"
+ },
+ {
+  "id": 15,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2001-01-01",
+  "email": "ignacio@gmail.com",
+  "password": "$2a$10$JXYtibtoQ.hJzFCs.ecQYuf3UdWrJWE5ruWjnhOMXknP0so7ATeKi",
+  "categoria": "Administrador",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 16,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2020-01-01",
+  "email": "ignacio1@gmail.com",
+  "password": "$2a$10$zTEwnIrXks1B9hZ1RIfO/Oa2t6KTvj14.S6QqZxyDjCjfyu9D.Rq.",
+  "categoria": "Administrador",
+  "imagen": "default-image.png"
  }
 ]
