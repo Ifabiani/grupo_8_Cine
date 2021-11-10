@@ -33,7 +33,7 @@ router.post('/registrar', upload.single('imagen'), validacionesRegistro, control
 router.get('/editar/:id', controller.editar);
 
 //Ruta que edita un usuario 
-router.post('/editar/:id', upload.single('imagen'), controller.update);
+router.put('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un producto en particular
 router.get('/eliminar/:id', controller.eliminar);

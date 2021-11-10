@@ -67,11 +67,11 @@
  },
  {
   "id": 8,
-  "nombre": "Ignacio 3",
+  "nombre": "Ignacio 8",
   "apellido": "Fabiani",
   "nacimiento": "2001-01-01",
   "email": "ignacio@estudiodfabiani.com.ar",
-  "password": "$2a$10$r9EI0cuiyfvBJ9Sp4TGdvOyES1DBR9NZ4VQITwMyUTiQYyDYELqPS",
+  "password": "$2a$10$oW98qIz3zKJT0HmhFOqvUuaqEweJMIae.OXGVOfoKkRvbXdFGbtwK",
   "categoria": "Elige una opción",
   "imagen": "default-image.png"
  },

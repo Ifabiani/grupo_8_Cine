@@ -29,6 +29,7 @@ router.get('/', controller.productos)
 router.get('/crear', controller.crear);
 router.post('/', upload.single('imagen'), controller.store)
 
+//Ruta del carrito de peliculas
 router.get('/carrito', controller.carrito);
 
 //Ruta que muestra el detalle de una pelicula en particular
@@ -38,10 +39,10 @@ router.get('/:id', controller.detallePelicula);
 router.get('/edit/:id', controller.editar);
 
 //Ruta que edita una película en particular
-router.post('/editar/:id', upload.single('imagen'), controller.update);
+router.put('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un producto en particular
-router.get('/eliminar/:id', controller.eliminar);
+router.delete('/eliminar/:id', controller.eliminar);
 
 
 

@@ -32,7 +32,7 @@ const userController = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
         res.redirect('/usuarios/registrar');
     }else{
-        res.render((path.join(__dirname,'../Views/users/registrar.ejs')), {errors: errors.array(), old: req.body})                    
+        res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
     },
 
@@ -72,7 +72,7 @@ const userController = {
 		})
 
 		fs.writeFileSync(usersFilePath, JSON.stringify(newUsers, null, ' '));
-		res.redirect('/usuarios/registro');
+		res.redirect('/usuarios/registrar');
     },
 
     eliminar: (req, res) => {
@@ -90,30 +90,30 @@ const userController = {
     logeo:(req, res)=> {
 
     const errors = validationResult(req);
-
+        let usuarioALoguearse
     if (errors.isEmpty()){
         let usersFilePath = path.join(__dirname, '../Data/users.json');
         let users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-        let usuarioALoguearse = null
+        
         for (let i=0; i<users.length; i++){
             if (users[i].email == req.body.email){
-                // if (bcrypt.compareSync(req.body.password, users[i].password)){
-                    let usuarioALoguearse = users[i];
+                if (bcrypt.compareSync(req.body.password, users[i].password)){
+                    usuarioALoguearse = users[i];               
                     
-                // }
+                }
             }
         }
-        console.log(usuarioALoguearse);
-        // if(usuarioALoguearse == undefined){
-        //     res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
-        // ]})
-        // }
-        // req.session.usuarioLogueado = usuarioALoguearse;    
+        
+        if(usuarioALoguearse == undefined){
+            res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
+        ]})
+        }
+        req.session.usuarioLogueado = usuarioALoguearse;    
     
     
-    // // res.redirect('/')
-    // }else{
-    //     res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
+    res.redirect('/')
+    }else{
+        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
 
     }
     
