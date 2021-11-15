@@ -61,11 +61,17 @@ const productController = {
         let id = req.params.id;
 		let productToEdit = products.find(product => product.id == id)
 
-		
+		let imageName;
+        if (req.file != undefined) {
+            imageName = req.file.filename
+        } else {
+            imageName = 'default-image.png'
+        }
         
 		productToEdit = {
 			id: productToEdit.id,
-            imagen: productToEdit.imagen,
+            // imagen: productToEdit.imagen,
+            imagen:imageName,
 			...req.body,
 			
 		};

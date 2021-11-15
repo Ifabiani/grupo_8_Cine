@@ -38,7 +38,7 @@ const userController = {
     }else{
         res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
-    res.redirect('/')
+    res.render((path.join(__dirname,'../Views/home.ejs')))
     },
 
     editar: (req, res) => {

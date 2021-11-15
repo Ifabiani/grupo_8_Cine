@@ -36,7 +36,7 @@ router.get('/editar/:id', controller.editar);
 //Ruta que edita un usuario 
 router.put('/editar/:id', upload.single('imagen'), controller.update);
 
-//Ruta que elimina un producto en particular
+//Ruta que elimina un usuario en particular
 router.get('/eliminar/:id', controller.eliminar);
 
 //Ruta que trae el formulario de login

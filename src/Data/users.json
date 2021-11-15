@@ -91,7 +91,7 @@
   "apellido": "",
   "nacimiento": "",
   "email": "",
-  "password": "$2a$10$buN.jF1YuxCtFn0lZ5m9F.xoN9Vvc0RBiRnA3LAAY5AzoGxWSjp1e",
+  "password": "$2a$10$yWHm7i0Jf3ActO7/udX/yeU1BCgMp1w4q/4tHWa3sJI2.YtIWh89S",
   "categoria": "Elige una opción",
   "imagen": "default-image.png"
  },
@@ -186,13 +186,13 @@
   "imagen": "usuario-19"
  },
  {
-  "id": 20,
+  "id": 21,
   "nombre": "Ignacio",
   "apellido": "Fabiani",
-  "nacimiento": "2005-01-01",
+  "nacimiento": "2011-05-01",
   "email": "ignacio5@gmail.com",
-  "password": "$2a$10$L3y2V.6grnu/qfgBXaxlHOaDWCmu1k8L4.ZWZbFqvO8YNlQq1uTg6",
+  "password": "$2a$10$89lcaKOlnUKCQJEPlXtGQedjw0.VMcVTJkxcbA/qeO1dT5lBu4bOW",
   "categoria": "Administrador",
-  "imagen": "usuario-20"
+  "imagen": "usuario-21"
  }
 ]
