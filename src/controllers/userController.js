@@ -7,8 +7,9 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const {validationResult} = require('express-validator');
 const { log } = require('console');
 
+
 const productsFilePath = path.join(__dirname, '../Data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const userController = {
 
@@ -104,10 +105,14 @@ const userController = {
             if (users[i].email == req.body.email){
                 if (bcrypt.compareSync(req.body.password, users[i].password)){
                     usuarioALoguearse = users[i];               
-                    
                 }
+               
             }
+            
         }
+        // if(req.body.remember_user) {
+        //     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+        // }
         
         if(usuarioALoguearse == undefined){
             res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
@@ -129,7 +134,8 @@ const userController = {
     
     },
 
-    logout: function(req, file){
+    logout: function(req, res, file){
+        res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
     }
@@ -139,5 +145,6 @@ const userController = {
 
 }
 
-module.exports = userController
+module.exports = userController;
+// module.exports = users;
 

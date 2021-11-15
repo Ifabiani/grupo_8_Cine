@@ -25,7 +25,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 //Ruta que trae el formulario de registro
-router.get('/registrar', guestMiddleware,  controller.registro);
+router.get('/registrar', guestMiddleware, controller.registro);
 
 //Ruta que carga el formulario de registro
 router.post('/registrar', upload.single('imagen'), validacionesRegistro, controller.crear);
