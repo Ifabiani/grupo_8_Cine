@@ -5,6 +5,10 @@ const bcrypt = require('bcryptjs');
 const usersFilePath = path.join(__dirname, '../Data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const {validationResult} = require('express-validator');
+const { log } = require('console');
+
+const productsFilePath = path.join(__dirname, '../Data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'))
 
 const userController = {
 
@@ -34,6 +38,7 @@ const userController = {
     }else{
         res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
+    res.redirect('/')
     },
 
     editar: (req, res) => {
@@ -108,17 +113,26 @@ const userController = {
             res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
         ]})
         }
+        delete usuarioALoguearse.password;
         req.session.usuarioLogueado = usuarioALoguearse;    
+        
+         
     
-    
-    res.redirect('/')
+        
     }else{
         res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
 
     }
     
     
-}
+    res.redirect('/')
+    
+    },
+
+    logout: function(req, file){
+        req.session.destroy();
+        return res.redirect('/');
+    }
 
     
     

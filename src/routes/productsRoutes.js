@@ -3,6 +3,7 @@ const router = express.Router();
 const controller = require('../controllers/productsController');
 const multer = require('multer');
 const path = require('path');
+const authMiddleware = require('../Middlewares/authMiddleware.js')
 
 const fs = require('fs');
 
@@ -30,7 +31,7 @@ router.get('/crear', controller.crear);
 router.post('/', upload.single('imagen'), controller.store)
 
 //Ruta del carrito de peliculas
-router.get('/carrito', controller.carrito);
+router.get('/carrito', authMiddleware, controller.carrito);
 
 //Ruta que muestra el detalle de una pelicula en particular
 router.get('/:id', controller.detallePelicula);

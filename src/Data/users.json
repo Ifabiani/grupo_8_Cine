@@ -154,5 +154,45 @@
   "password": "$2a$10$zTEwnIrXks1B9hZ1RIfO/Oa2t6KTvj14.S6QqZxyDjCjfyu9D.Rq.",
   "categoria": "Administrador",
   "imagen": "default-image.png"
+ },
+ {
+  "id": 17,
+  "nombre": "Ignacio",
+  "apellido": "Fabinai 2",
+  "nacimiento": "2021-11-09",
+  "email": "ignacio01@gmail.com",
+  "password": "$2a$10$lxXMnj8yxj2NZPqLx.C1zOMLtKKTUOkNONO5uHFP6ni.UbRn2s7tu",
+  "categoria": "Administrador",
+  "imagen": "default-image.png"
+ },
+ {
+  "id": 18,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2000-01-01",
+  "email": "ignacio3@gmail.com",
+  "password": "$2a$10$JYXOu2at2ReBusr/tAPR2eNtq6ECvgBshcNHvy8D73oDWP86MuSU2",
+  "categoria": "Administrador",
+  "imagen": "usuario-18"
+ },
+ {
+  "id": 19,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2021-01-01",
+  "email": "ignacio4@gmail.com",
+  "password": "$2a$10$UrAX8vKcVgME0BGsE6EyQOLYqB0XG9VoqC0N5o8GMI1DBkGD4gpLy",
+  "categoria": "Administrador",
+  "imagen": "usuario-19"
+ },
+ {
+  "id": 20,
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2005-01-01",
+  "email": "ignacio5@gmail.com",
+  "password": "$2a$10$L3y2V.6grnu/qfgBXaxlHOaDWCmu1k8L4.ZWZbFqvO8YNlQq1uTg6",
+  "categoria": "Administrador",
+  "imagen": "usuario-20"
  }
 ]

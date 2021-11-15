@@ -11,7 +11,11 @@
         <i class="fas fa-bars"></i>
     
         <div id="contenedor4">
+            <% if (locals.isLogged) { %>
+             <p class="nav2">Hola, <%= locals.usuarioLogueado.nombre%> <%= locals.usuarioLogueado.apellido%>!</p>
+            <% } else { %>
             <a href="http://localhost:3031/usuarios/login"> <i class="far fa-user-circle"></i></a>
+            <%}%>
             <i class="fas fa-search"></i>
             <a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a>
         </div>

@@ -22,10 +22,6 @@ Continuar haciendo: la división de tareas y el trabajo independiente, respetand
 Hacer menos: nada para comentar
 Dejar de hacer: si bien terminamos mas tranquilos este sprint, no hay que dejar las cosas para último momento.
 
-Aclaraciones sobre el sprint 4:
-
-- las rutas de PUT y DELETE las tuvimos que hacer con GET y POST porque no nos tomaban los métodos. No sabemos si por error de aplicación del metho-override, de versiones o qué.
-- se rompió la ruta de /productos/carrito. Y cualquier otra ruta que se agregue, tira el mismo error en la vista detallePelicula.ejs que nada tiene que ver con la ruta de carrito o cualquier otra que se cree. No sabemos de dónde viene el error.
 
 Retro del Sprint 4
 

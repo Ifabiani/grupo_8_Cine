@@ -91,7 +91,7 @@ header {
     text-align: left;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 90vw;
 }
 
@@ -139,16 +139,19 @@ ul a{
 .fa-user-circle {
     color: white;
     font-size: 1.2rem;
+    text-align:right;
 }
 
 .fa-search {
     color: white;
     font-size: 1.2rem; 
+    text-align:right;
 }
 
 .fa-shopping-cart {
     color: white;
     font-size: 1.2rem; 
+    text-align:right;
 }
 
 #circle {
@@ -165,6 +168,7 @@ ul a{
 
 #contenedor4 {
     display:flex;
+    text-align: right;
     justify-content: flex-end;
     flex-grow: 1;
     width:33%;
@@ -612,7 +616,11 @@ input:focus~label {
 
 .select{ 
     flex-grow: 0;   
+}
 
+#cancelar{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -812,6 +820,8 @@ header {
 #nav {
     width:60vw;
     height: 6.5rem;
+    display:flex;
+    justify-content: flex-end;
 }
 
 #peliculas{
