@@ -25,7 +25,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 //Ruta que muestra todas las peliculas
-router.get('/', controller.productos)
+router.get('/', authMiddleware, adminMiddleware, controller.productos)
 
 //Ruta que trae y crea peliculas
 router.get('/crear', authMiddleware, adminMiddleware, controller.crear);
@@ -44,7 +44,7 @@ router.get('/edit/:id', authMiddleware, adminMiddleware, controller.editar);
 router.put('/editar/:id', upload.single('imagen'), authMiddleware, adminMiddleware, controller.update);
 
 //Ruta que elimina un producto en particular
-router.get('/eliminar/:id', authMiddleware, adminMiddleware, controller.eliminar);
+router.delete('/eliminar/:id', authMiddleware, adminMiddleware, controller.eliminar);
 
 
 

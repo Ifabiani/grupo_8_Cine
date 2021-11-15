@@ -232,7 +232,15 @@ main {
 
 .main-home{
     width: 90vw;
+    text-align: center; 
+}
+
+.main-home1{
+    width: 90vW;
     text-align: center;
+    display:flex;
+    margin-right:10px; 
+    flex-wrap: wrap;
 }
 
 #titulo {
@@ -362,6 +370,27 @@ ul strong {
 
 .sinopsis strong {
     color: rgba(248, 237, 237, 0.842);
+}
+
+#botones{
+    display: flex;
+    border-radius: 20px;
+}
+
+#botones1{
+    border-radius: 30px;
+    border: 1px solid black;
+    color:black;
+    background-color: white;
+    width: 5rem;
+}
+
+#botones2{
+    border-radius: 30px;
+    border: 1px solid black;
+    color: white;
+    background-color: white;
+    width: 8rem;
 }
 
 /* ------------------------carrito main-------------------------- */

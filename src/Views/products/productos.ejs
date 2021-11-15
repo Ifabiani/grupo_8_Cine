@@ -8,15 +8,25 @@
     <%-include ('../partials/header')%>
 
     <!-- listar los productos -->
-    <div class="main-home">
+    <div class="main-home1">
     <% products.forEach(function(product){%>
 
         <article>
             <a href="http://localhost:3031/productos/<%=product.id%>"><img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt=""></a>
             <h3>ESTRENO</h3>
             <h4>A PUERTAS CERRADAS</h4>
-        </article>
 
+            <div id="botones">
+            <form action="/productos/edit/<%=product.id%>" method="get">
+            <button  id="botones1" type="submit">Editar</button>
+            </form>
+            <form action="/productos/eliminar/<%=product.id%>?_method=DELETE" method="POST">
+            <button  type="submit" id="botones1">Eliminar</button>
+            </form>
+            </div>
+
+        </article>
+        
         <%})%>
 
     </div>
