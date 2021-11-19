@@ -37,162 +37,32 @@
  },
  {
   "id": 5,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$ZeTH7Ki02gTPG0KpiBRhVu20Ea6Bc6fdbIJLna62MKtRz5BhauXRS",
-  "categoria": "",
-  "imagen": "default-image.png"
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2001-01-01",
+  "email": "ignaciofabiani@gmail.com",
+  "password": "$2a$10$uAGOzHBb0pIn/3Z51SywVO/Il1nlCwG1Z4TCHAip2lhTkgCVRc8ay",
+  "categoria": "Administrador",
+  "imagen": "usuario-5"
  },
  {
   "id": 6,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$ae0OXxDZ2lGpBu.z9FHwKeFfEQS3/qdw9XxfieljpB4rfbN1LB9i.",
-  "categoria": "",
-  "imagen": "default-image.png"
+  "nombre": "Ignacio",
+  "apellido": "Fabiani",
+  "nacimiento": "2001-01-01",
+  "email": "ignaciofabiani@gmail.com",
+  "password": "$2a$10$/Urtxg6hul8La4jE79FN3Ok516.bxV..o1VZhDx0zbWz0o/27ty5a",
+  "categoria": "Administrador",
+  "imagen": "usuario-6"
  },
  {
   "id": 7,
   "nombre": "Ignacio",
   "apellido": "Fabiani",
   "nacimiento": "2001-01-01",
-  "email": "ignacio@estudiodfabiani.com.ar",
-  "password": "$2a$10$CXGFLzLjDjvEEar.z4O4lOfJlPDlkyTVTPOKIOgL/0vn5YWNF5kDS",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 8,
-  "nombre": "Ignacio 8",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignacio@estudiodfabiani.com.ar",
-  "password": "$2a$10$oW98qIz3zKJT0HmhFOqvUuaqEweJMIae.OXGVOfoKkRvbXdFGbtwK",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 9,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$3nV/90iugZ4IXoDddlHD0errKCMmiloOUsL8DFK/QSruYw42KJodq",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 10,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$yWHm7i0Jf3ActO7/udX/yeU1BCgMp1w4q/4tHWa3sJI2.YtIWh89S",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 11,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$dPSRDS8Ueoz3PPwM4eK8yerHL/wWqgTxNtB6V.HTeCo8lfA0cw/eu",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 12,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$RBGELEqwfZMIQkA1TtoTmedEfrJDQCAo3Pl3upYVOEQBi//Cj07I6",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 13,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$wKNGbqmkQJ.ujHG7jjZZ0umvJ77u9XethrzO2j4I4QxYXPnCHmNGq",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 14,
-  "nombre": "",
-  "apellido": "",
-  "nacimiento": "",
-  "email": "",
-  "password": "$2a$10$x8RmkxLBfoT.cns/C6IRZugc8p74CkGVw1HQlt7.5adnPY2tTHpvi",
-  "categoria": "Elige una opción",
-  "imagen": "default-image.png"
- },
- {
-  "id": 15,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignacio@gmail.com",
-  "password": "$2a$10$JXYtibtoQ.hJzFCs.ecQYuf3UdWrJWE5ruWjnhOMXknP0so7ATeKi",
+  "email": "ignacio2@gmail.com",
+  "password": "$2a$10$ObvvJYa.RHV9oHeSl6nvteUpuUN8/QztdjbBZF1HaBaeZqvZpAgWW",
   "categoria": "Administrador",
-  "imagen": "default-image.png"
- },
- {
-  "id": 16,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2020-01-01",
-  "email": "ignacio1@gmail.com",
-  "password": "$2a$10$zTEwnIrXks1B9hZ1RIfO/Oa2t6KTvj14.S6QqZxyDjCjfyu9D.Rq.",
-  "categoria": "Administrador",
-  "imagen": "default-image.png"
- },
- {
-  "id": 17,
-  "nombre": "Ignacio",
-  "apellido": "Fabinai 2",
-  "nacimiento": "2021-11-09",
-  "email": "ignacio01@gmail.com",
-  "password": "$2a$10$lxXMnj8yxj2NZPqLx.C1zOMLtKKTUOkNONO5uHFP6ni.UbRn2s7tu",
-  "categoria": "Administrador",
-  "imagen": "default-image.png"
- },
- {
-  "id": 18,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2000-01-01",
-  "email": "ignacio3@gmail.com",
-  "password": "$2a$10$JYXOu2at2ReBusr/tAPR2eNtq6ECvgBshcNHvy8D73oDWP86MuSU2",
-  "categoria": "Administrador",
-  "imagen": "usuario-18"
- },
- {
-  "id": 19,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2021-01-01",
-  "email": "ignacio4@gmail.com",
-  "password": "$2a$10$UrAX8vKcVgME0BGsE6EyQOLYqB0XG9VoqC0N5o8GMI1DBkGD4gpLy",
-  "categoria": "Administrador",
-  "imagen": "usuario-19"
- },
- {
-  "id": 21,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2011-05-01",
-  "email": "ignacio5@gmail.com",
-  "password": "$2a$10$89lcaKOlnUKCQJEPlXtGQedjw0.VMcVTJkxcbA/qeO1dT5lBu4bOW",
-  "categoria": "Administrador",
-  "imagen": "usuario-21"
+  "imagen": "usuario-7"
  }
 ]

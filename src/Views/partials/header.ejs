@@ -12,7 +12,8 @@
     
         <div id="contenedor4">
             <% if (locals.isLogged) { %>
-             <p class="nav2">Hola, <%= locals.usuarioLogueado.nombre%> <%= locals.usuarioLogueado.apellido%>!</p>
+             <p class="nav2"> Hola, <%= locals.usuarioLogueado.nombre%> <%= locals.usuarioLogueado.apellido%>! </p>
+             
             <% } else { %>
             <a href="http://localhost:3031/usuarios/login"> <i class="far fa-user-circle"></i></a>
             <%}%>
