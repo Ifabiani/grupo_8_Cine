@@ -10,23 +10,50 @@
         
         <i class="fas fa-bars"></i>
     
-        <div id="contenedor4">
+        
             <% if (locals.isLogged) { %>
-             <p class="nav2"> Hola, <%= locals.usuarioLogueado.nombre%> <%= locals.usuarioLogueado.apellido%>! </p>
-             
+            <div id="contenedor4" >
+                <div class="dropdown1" >
+                    <div class="dropdown">
+                    <button class="dropbtn"><img id="avatar" src="\Images\Users\usuario-<%= locals.usuarioLogueado.id%>" alt=""> Hola, <%= locals.usuarioLogueado.nombre%>!</button>
+                    <div class="dropdown-content">
+                      <a href="#">Mi perfil</a>
+                      <a href="http://localhost:3031/usuarios/logout"">Cerrar sesión</a>
+                    </div>
+                </div>
+                        <div id="cont3">
+                            <div><i class="fas fa-search"></i></div>
+                                <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
+                        </div>
+                </div>
+            </div>
+                    <div id="cont2"><div id="cont4"><p>Hola, <%= locals.usuarioLogueado.nombre%>!</p></div>
+                    <div><i class="fas fa-search"></i></div>
+                    <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
+                    </div>
+            
+                
+        
+            
             <% } else { %>
-            <a href="http://localhost:3031/usuarios/login"> <i class="far fa-user-circle"></i></a>
+            <div id="contenedor4">
+            <div id="cont1" ><a href="http://localhost:3031/usuarios/login"> <i class="far fa-user-circle"></i></a></div>
+            <div><i class="fas fa-search"></i></div>
+            <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
+            </div>
             <%}%>
-            <i class="fas fa-search"></i>
-            <a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a>
+            
         </div>
-    </div>
+
+       
+    
         <ul class="nav2">
             <a href="http://localhost:3031/#titulo"><li>PELICULAS</li></a>
             <a href="http://localhost:3031/#complejos"><li>COMPLEJOS</li></a>
             <li>CONTACTO</li>
             <li>CINE CLUB</li>
         </ul>
+
    
     <p id="centrar">
         <img id="carrousel" src="\Images\carrousel-1.png" alt="">

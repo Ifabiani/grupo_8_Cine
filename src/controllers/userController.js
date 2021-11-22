@@ -110,9 +110,9 @@ const userController = {
             }
             
         }
-        // if(req.body.remember_user) {
-        //     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-        // }
+        if(req.body.remember_user) {
+            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+        }
         
         if(usuarioALoguearse == undefined){
             res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
