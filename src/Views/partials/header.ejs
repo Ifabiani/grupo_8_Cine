@@ -12,13 +12,13 @@
     
         
             <% if (locals.isLogged) { %>
-            <div id="contenedor4" >
+            <div  >
                 <div class="dropdown1" >
                     <div class="dropdown">
                     <button class="dropbtn"><img id="avatar" src="\Images\Users\usuario-<%= locals.usuarioLogueado.id%>" alt=""> Hola, <%= locals.usuarioLogueado.nombre%>!</button>
                     <div class="dropdown-content">
-                      <a href="#">Mi perfil</a>
-                      <a href="http://localhost:3031/usuarios/logout"">Cerrar sesión</a>
+                      <a href="http://localhost:3031/usuarios/perfil">Mi perfil</a>
+                      <a href="http://localhost:3031/usuarios/logout">Cerrar sesión</a>
                     </div>
                 </div>
                         <div id="cont3">
@@ -27,7 +27,8 @@
                         </div>
                 </div>
             </div>
-                    <div id="cont2"><div id="cont4"><p>Hola, <%= locals.usuarioLogueado.nombre%>!</p></div>
+                    <div id="cont2">
+                    <div id="cont4"><p>Hola, <%= locals.usuarioLogueado.nombre%>!</p></div>
                     <div><i class="fas fa-search"></i></div>
                     <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
                     </div>

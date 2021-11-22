@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include ('../partials/head')%>
+
+
+<body>
+    <%-include ('../partials/header')%>
+
+    <!-- listar los usuarios -->
+    <div class="main-home1" style="margin-top:5rem">
+    <% users.forEach(function(user){%>
+
+        <article >
+            <p id="h5">Id: <%=user.id%> </p>
+            <h5 id="h5"><%=user.nombre%> <%=users.apellido%></h5>
+            <h5 id="h5"><%=user.email%> </h5>
+            <h5 id="h5"><%=user.categoria%></h5>
+            
+            <p id="h5"><img id="avatar"  src="\Images\Users\<%=user.imagen%>"  alt=""></p>
+            
+
+            <div  id="h5">
+            <form action="/usuarios/editar/<%=user.id%>" method="GET" id="h5">
+            <button  id="botones1" type="submit" >Editar</button>
+            </form>
+            <form action="/usuarios/eliminar/<%=user.id%>?_method=DELETE" method="POST" id="h5">
+            <button  type="submit" id="botones1" >Eliminar</button>
+            </form>
+            </div>
+
+        </article>
+        
+        <%})%>
+
+    </div>
+        <%- include ('../partials/footer')%>
+

@@ -97,7 +97,10 @@ const productController = {
 	},
    
     carrito: (req, res) => {
-        res.render(path.join(__dirname,'../Views/products/carrito.ejs'), {products:products})
+        let id = req.params.id
+		let product = products.find(product => product.id == id)
+
+        res.render(path.join(__dirname,'../Views/products/carrito.ejs'), {product : product})
     },
 
     

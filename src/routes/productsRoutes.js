@@ -32,7 +32,7 @@ router.get('/crear', authMiddleware, adminMiddleware, controller.crear);
 router.post('/', upload.single('imagen'), authMiddleware , adminMiddleware, controller.store)
 
 //Ruta del carrito de peliculas
-router.get('/carrito', authMiddleware, controller.carrito);
+router.get('/carrito/:id', authMiddleware, controller.carrito);
 
 //Ruta que muestra el detalle de una pelicula en particular
 router.get('/:id', controller.detallePelicula);

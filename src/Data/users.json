@@ -40,39 +40,9 @@
   "nombre": "Ignacio",
   "apellido": "Fabiani",
   "nacimiento": "2001-01-01",
-  "email": "ignaciofabiani@gmail.com",
-  "password": "$2a$10$uAGOzHBb0pIn/3Z51SywVO/Il1nlCwG1Z4TCHAip2lhTkgCVRc8ay",
+  "email": "ignacio5@gmail.com",
+  "password": "$2a$10$slo0vKUxZyTJ1jM1EPuupuBg7aYLaNj48xIOeETlZ7C9xZsQFD2NK",
   "categoria": "Administrador",
   "imagen": "usuario-5"
- },
- {
-  "id": 6,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignaciofabiani@gmail.com",
-  "password": "$2a$10$/Urtxg6hul8La4jE79FN3Ok516.bxV..o1VZhDx0zbWz0o/27ty5a",
-  "categoria": "Administrador",
-  "imagen": "usuario-6"
- },
- {
-  "id": 7,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignacio2@gmail.com",
-  "password": "$2a$10$ObvvJYa.RHV9oHeSl6nvteUpuUN8/QztdjbBZF1HaBaeZqvZpAgWW",
-  "categoria": "Administrador",
-  "imagen": "usuario-7"
- },
- {
-  "id": 8,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignacio8@gmail.com",
-  "password": "$2a$10$Ffmu3LR6bnFprkMBa9G2Duwb848nSjQRfESJ6BGA9WNCMP8i4dCRa",
-  "categoria": "Administrador",
-  "imagen": "usuario-8"
  }
 ]

@@ -20,6 +20,8 @@ const userController = {
     crear: (req, res) => {
     const errors = validationResult(req);
 
+    
+    
     if (errors.isEmpty()){
         let imageName;
         if (req.file != undefined) {
@@ -27,6 +29,12 @@ const userController = {
         } else {
                     imageName = 'default-image.png'
         }
+        
+        for (let i=0; i<users.length; i++){
+            if (users[i].email == req.body.email){
+                res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: [{msg: 'Ya existe un usuario con el email declarado'}]})}}
+       
+
         let newUser = {
                 id: users[users.length - 1].id + 1,
                 ...req.body,
@@ -39,7 +47,7 @@ const userController = {
     }else{
         res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
-    res.render((path.join(__dirname,'../Views/home.ejs')))
+    res.redirect('/')
     },
 
     editar: (req, res) => {
@@ -138,9 +146,21 @@ const userController = {
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
-    }
+    },
 
-    
+    //Controlador que muestra todos los productos (GET)
+    usuarios: (req, res) => {
+        const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+        res.render(path.join(__dirname,'../Views/users/usuarios.ejs'), {users : users})
+    },
+
+    //Controlador que muestra el perfil solicitado (GET)
+    perfil: (req, res) => {
+        const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
+
+        
+        res.render(path.join(__dirname,'../Views/users/perfil.ejs'), {user : req.session.usuarioLogueado})
+    }
     
 
 }

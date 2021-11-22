@@ -5,6 +5,7 @@ const multer = require('multer');
 const path = require('path');
 const guestMiddleware = require('../Middlewares/guestMiddleware.js')
 const authMiddleware = require('../Middlewares/authMiddleware.js')
+const adminMiddleware = require('../Middlewares/adminMiddleware.js')
 const fs = require('fs');
 
 const usersFilePath = path.join(__dirname, '../Data/users.json');
@@ -24,6 +25,9 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage:storage});
 
+//Ruta que trae todos los usuarios
+router.get('/', authMiddleware, adminMiddleware, controller.usuarios);
+
 //Ruta que trae el formulario de registro
 router.get('/registrar', guestMiddleware, controller.registro);
 
@@ -37,7 +41,7 @@ router.get('/editar/:id', controller.editar);
 router.put('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un usuario en particular
-router.get('/eliminar/:id', controller.eliminar);
+router.delete('/eliminar/:id', controller.eliminar);
 
 //Ruta que trae el formulario de login
 router.get('/login', guestMiddleware, controller.login);
@@ -48,6 +52,8 @@ router.post('/login', upload.single('imagen'), validacionesLogin, controller.log
 //Ruta para deslogear un usuario
 router.get('/logout', authMiddleware, controller.logout);
 
+//Ruta para ver un perfil en particular
+router.get('/perfil', authMiddleware, controller.perfil);
 
 
 
