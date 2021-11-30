@@ -43,11 +43,12 @@ const userController = {
         };
         users.push(newUser)
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/usuarios/registrar');
+        res.redirect('/');
     }else{
         res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})                    
     }
-    res.redirect('/')
+    // res.redirect('/')
+    // res.render((path.join(__dirname,'../Views/home.ejs')), {products: products})
     },
 
     editar: (req, res) => {
