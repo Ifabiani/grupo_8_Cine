@@ -32,7 +32,7 @@ router.get('/', authMiddleware, adminMiddleware, controller.usuarios);
 router.get('/registrar', guestMiddleware, controller.registro);
 
 //Ruta que carga el formulario de registro
-router.post('/registrar',  upload.single('imagen'), validacionesRegistro, controller.crear);
+router.post('/registrar',   upload.single('imagen'), validacionesRegistro, controller.crear);
 
 //Ruta que trae un usuario a editar
 router.get('/editar/:id', controller.editar);

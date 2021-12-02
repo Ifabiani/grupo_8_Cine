@@ -44,5 +44,15 @@
   "password": "$2a$10$slo0vKUxZyTJ1jM1EPuupuBg7aYLaNj48xIOeETlZ7C9xZsQFD2NK",
   "categoria": "Administrador",
   "imagen": "usuario-5"
+ },
+ {
+  "id": 6,
+  "nombre": "Jose",
+  "apellido": "Perez",
+  "nacimiento": "1998-04-01",
+  "email": "jose@gmail.com",
+  "password": "$2a$10$DH5nE5FjEjpizzR.GReFg.zcKdXREt77z72DBkWXjd325Z85C5.Ki",
+  "categoria": "Administrador",
+  "imagen": "usuario-6"
  }
 ]
