@@ -26,22 +26,22 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 //Ruta que trae todos los usuarios
-router.get('/', authMiddleware, adminMiddleware, controller.usuarios);
+router.get('/', authMiddleware, adminMiddleware, controller.users);
 
 //Ruta que trae el formulario de registro
-router.get('/registrar', guestMiddleware, controller.registro);
+router.get('/registrar', guestMiddleware, controller.add);
 
 //Ruta que carga el formulario de registro
-router.post('/registrar',   upload.single('imagen'), validacionesRegistro, controller.crear);
+router.post('/registrar',   upload.single('imagen'), validacionesRegistro, controller.create);
 
 //Ruta que trae un usuario a editar
-router.get('/editar/:id', controller.editar);
+router.get('/editar/:id', controller.edit);
 
 //Ruta que edita un usuario 
 router.put('/editar/:id', upload.single('imagen'), controller.update);
 
 //Ruta que elimina un usuario en particular
-router.delete('/eliminar/:id', controller.eliminar);
+router.delete('/eliminar/:id', controller.destroy);
 
 //Ruta que trae el formulario de login
 router.get('/login', guestMiddleware, controller.login);
@@ -53,8 +53,7 @@ router.post('/login', upload.single('imagen'), validacionesLogin, controller.log
 router.get('/logout', authMiddleware, controller.logout);
 
 //Ruta para ver un perfil en particular
-router.get('/perfil', authMiddleware, controller.perfil);
-
+router.get('/perfil', authMiddleware, controller.profile)
 
 
 

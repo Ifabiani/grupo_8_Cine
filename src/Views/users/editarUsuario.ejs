@@ -13,7 +13,7 @@
         <a href="http://localhost:3031/"><img id="logo-registro" src="\Images\logo-1.png" alt=""></a>
 
     </div>
-    <form action="/usuarios/editar/<%= userToEdit.id %>?_method=PUT" id="form-registro" method="POST" enctype="multipart/form-data" >
+    <form action="/usuarios/editar/<%= user.id %>?_method=PUT" id="form-registro" method="POST" enctype="multipart/form-data" >
         <div class="form">
 
             <h1>EDITAR REGISTRO</h1>
@@ -22,19 +22,19 @@
                     <p id="error"><%=error.msg%></p>
                     <%})}%>
             <div class="grupo">
-                <input type="text" name="nombre" id="name" value="<%= userToEdit.nombre%>" ><span class="barra"></span>
+                <input type="text" name="nombre" id="name" value="<%= user.first_name%>" ><span class="barra"></span>
                 <label for="">Nombre</label>
             </div>
             <div class="grupo">
-                <input type="text" name="apellido" id="name" value="<%= userToEdit.apellido%>" ><span class="barra"></span>
+                <input type="text" name="apellido" id="name" value="<%= user.last_name%>" ><span class="barra"></span>
                 <label for="">Apellido</label>
             </div>
             <div class="grupo">
-                <input type="date" name="nacimiento" id="name" id="fecha" value="<%= userToEdit.nacimiento%>" ><span class="barra"></span>
+                <input type="date" name="nacimiento" id="name" id="fecha" value="<%= user.birth%>" ><span class="barra"></span>
                 <label for="" id="fecha">Fecha de nacimiento</label>
             </div>
             <div class="grupo">
-                <input type="email" name="email" id="name" value="<%= userToEdit.email%>" ><span class="barra"></span>
+                <input type="email" name="email" id="name" value="<%= user.email%>" ><span class="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="grupo">
@@ -43,7 +43,7 @@
             </div >
             <div class="grupo2">
                 <label class="grupo1" for="">Categoria</label>
-               <select name="categoria"  value="<%= userToEdit.categoria%>">
+               <select name="categoria"  value="<%= user.category%>">
                 <option >Elige una opción</option>
                <option value="Administrador" >Administrador</option>
                <option value="Usuario" >Usuario</option>

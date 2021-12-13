@@ -36,16 +36,6 @@
   "imagen": "avatar-4.jpg"
  },
  {
-  "id": 5,
-  "nombre": "Ignacio",
-  "apellido": "Fabiani",
-  "nacimiento": "2001-01-01",
-  "email": "ignacio5@gmail.com",
-  "password": "$2a$10$slo0vKUxZyTJ1jM1EPuupuBg7aYLaNj48xIOeETlZ7C9xZsQFD2NK",
-  "categoria": "Administrador",
-  "imagen": "usuario-5"
- },
- {
   "id": 6,
   "nombre": "Jose",
   "apellido": "Perez",

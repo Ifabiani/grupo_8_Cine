@@ -65,7 +65,7 @@
                 <!-- <input type="text" name="actores" id="name" required><span class="barra"></span> -->
                 <label for="">Actores</label>
                 <p>
-                    <select name="actor" id="" required>
+                    <select name="actor[]" size="3" check id="" multiple required>
                         <option value="" disabled selected>- Seleccione el actor - </option>
                         <% allActors.forEach(actor => { %>
                         <option value="<%= actor.id %>"><%= actor.first_name %> <%= actor.last_name %></option>

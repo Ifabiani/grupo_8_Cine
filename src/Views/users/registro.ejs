@@ -44,13 +44,13 @@
             
             <div class="grupo2">
                 <label class="grupo1" class="select2" for="">Categoria</label>
-               <select name="categoria"  id="select">
-                <option value="">Elige una opción</option>
-               <option value="Administrador" <%= locals.old && old.categoria === "Administrador" ? 'selected' : ' ' %> >Administrador</option>
-               <option value="Usuario" <%= locals.old && old.categoria === 'Usuario' ? 'selected' : ' ' %> >Usuario</option>
-                </select>
-                
-            </div >
+                    <select name="category" id="" required>
+                        <option value="" disabled selected>- Seleccione la categoría - </option>
+                        <% category.forEach(category => { %>
+                        <option value="<%= category.id %>"><%= category.name %></option>
+                        <% }); %>
+                    </select>
+             </div >
         
             <div class="grupo">
                 <input type="file" name="imagen" id="name" ><span class="barra"></span>
