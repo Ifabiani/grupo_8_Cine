@@ -25,26 +25,26 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 //Ruta que muestra todas las peliculas
-router.get('/', authMiddleware, adminMiddleware, controller.productos)
+router.get('/', authMiddleware, adminMiddleware, controller.movies)
 
 //Ruta que trae y crea peliculas
-router.get('/crear', authMiddleware, adminMiddleware, controller.crear);
-router.post('/', upload.single('imagen'), authMiddleware , adminMiddleware, controller.store)
+router.get('/crear', authMiddleware, adminMiddleware, controller.add);
+router.post('/', upload.single('imagen'), authMiddleware , adminMiddleware, controller.create)
 
 //Ruta del carrito de peliculas
-router.get('/carrito/:id', authMiddleware, controller.carrito);
+router.get('/carrito/:id', authMiddleware, controller.cart);
 
 //Ruta que muestra el detalle de una pelicula en particular
-router.get('/:id', controller.detallePelicula);
+router.get('/:id', controller.detail);
 
 //Ruta que trae el formulario para editar una película
-router.get('/edit/:id', authMiddleware, adminMiddleware, controller.editar);
+router.get('/editar/:id', authMiddleware, adminMiddleware, controller.edit);
 
 //Ruta que edita una película en particular
 router.put('/editar/:id', upload.single('imagen'), authMiddleware, adminMiddleware, controller.update);
 
 //Ruta que elimina un producto en particular
-router.delete('/eliminar/:id', authMiddleware, adminMiddleware, controller.eliminar);
+router.delete('/eliminar/:id', authMiddleware, adminMiddleware, controller.destroy);
 
 
 

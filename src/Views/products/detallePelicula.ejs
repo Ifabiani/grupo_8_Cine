@@ -11,19 +11,20 @@
         <div class="contenedor-detalle-1">
             <div class="contenedor-detalle-2">
             
-                <img class="detalle-peliculas" src="\Images\<%=product.imagen%>" alt="">
+                <img class="detalle-peliculas" src="\Images\pelicula-2" alt="">
             </div>
             <div class="contenedor-detalle-3"> 
-                    <h2><%=product.name.toUpperCase()%></h2>
+                    <h2><%=movie.title.toUpperCase()%></h2>
                                        
                 <ul>
-                    <li><strong>Título original:</strong> <%=product.name%> </li>   
-                    <li><strong>Orígen:</strong><%=product.origen%> </li>
-                    <li><strong>Género:</strong> <%=product.genero%> </li>
-                    <li><strong>Director:</strong><%=product.director%> </li>
-                    <li><strong>Actores:</strong> <%=product.actores%> </li>
-                    <li><strong>Calificación:</strong> <%=product.calificacion%></li>
-                    <li><strong>Duración:</strong> <%=product.duracion%> </li>
+                    <li><strong>Título original:</strong> <%=movie.title%> </li>   
+                    <li><strong>Orígen:</strong><%=movie.origin.name%> </li>
+                    <li><strong>Género:</strong> <%=movie.genre.name%> </li>
+                    <li><strong>Director:</strong><% for(let i=0; i<movie.directors.length; i++){%><%=movie.directors[i].first_name%> <%=movie.directors[i].last_name%><%}%> </li>
+                    <li><strong>Actores:</strong> <% for(let i=0; i<movie.actors.length; i++){%>-<%=movie.actors[i].first_name%> <%=movie.actors[i].last_name%>-<%}%></li>
+                    <li><strong>Calificación:</strong> <%=movie.calification.name%></li>
+                    <li><strong>Duración:</strong> <%=movie.length%> </li>
+                    <li><strong>Rating:</strong> <%=movie.rating%> </li>
             
 
                 </ul>
@@ -31,11 +32,11 @@
             </div>     
             <div class="contenedor-detalle-4">  
                 <div class="sinopsis">
-                    <strong> Sinopsis:</strong> <%=product.sinopsis%>
+                    <strong> Sinopsis:</strong> <%=movie.synopsis%>
                 </div>  
                 <br>
                 <div>
-                <button id="botones2" type="submit"><a id="cancelar" href="http://localhost:3031/productos/carrito/<%=product.id%> ">Comprar entrada</a></button>
+                <button id="botones2" type="submit"><a id="cancelar" href="http://localhost:3031/productos/carrito/<%=movie.id%> ">Comprar entrada</a></button>
                 <button id="botones2" type="submit"><a id="cancelar" href="http://localhost:3031/">Cancelar</a></button>
                 </div>
                 <br>

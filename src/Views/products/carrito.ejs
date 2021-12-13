@@ -10,16 +10,16 @@
         <div id="carrito-contenedor">
             <div id="carrito-contenedor1">
             <article class="minitura-imagen-pelicula">
-                <img src="\Images\<%=product.imagen%>" width="200" height="300" alt="pelicula-1">
+                <img src="\Images\pelicula-<%=movie.id%>" width="200" height="300" alt="pelicula-1">
             </article>
             </div>
             <div id="carrito-contenedor2">
             <article style="color:white">
-                <p id="carrito-detalle"><%=product.name%></p>
-                <p id="carrito-detalle"><%=product.origen%></p>
-                <p id="carrito-detalle"> <%=product.genero%></p>
-                <p id="carrito-detalle"><%=product.calificacion%></p>
-                <p id="carrito-detalle"> <%=product.duracion%></p>
+                <p id="carrito-detalle"><%=movie.title%></p>
+                <p id="carrito-detalle"><%=movie.origin.name%></p>
+                <p id="carrito-detalle"> <%=movie.genre.name%></p>
+                <p id="carrito-detalle"><%=movie.calification.name%></p>
+                <p id="carrito-detalle"> <%=movie.length%></p>
             </article>
             </div>
 

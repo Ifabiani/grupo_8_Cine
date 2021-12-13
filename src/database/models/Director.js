@@ -17,25 +17,25 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         created_at: {
-            type: dataTypes.TIMESTAMP(),
+            type: dataTypes.DATE,
             allowNull: true
         },
         updated_at: {
-            type: dataTypes.TIMESTAMP(),
+            type: dataTypes.DATE,
             allowNull: true
         },
     };
     let config = {
         tableName: 'directors',
         timestamps: true,
-        // createdAt: 'created_at',
-        // updatedAt: 'updated_at',
-        // deletedAt: false
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+        deletedAt: false
     }
     const Director = sequelize.define(alias, cols, config); 
 
     Director.associate = function (models) {
-        Actor.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
+        Director.belongsToMany(models.Movie, { // models.Movie -> Movies es el valor de alias en movie.js
             as: "movies",
             through: 'director_movie',
             foreignKey: 'director_id',

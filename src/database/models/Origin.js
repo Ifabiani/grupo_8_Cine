@@ -16,20 +16,20 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         created_at: {
-            type: dataTypes.TIMESTAMP(),
+            type: dataTypes.DATE,
             allowNull: true
         },
         updated_at: {
-            type: dataTypes.TIMESTAMP(),
+            type: dataTypes.DATE,
             allowNull: true
         },
     };
     let config = {
         tableName: 'origin', 
         timestamps: true,
-        // createdAt: 'created_at',
-        // updatedAt: 'updated_at',
-        // deletedAt: false
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
+        deletedAt: false
     }
     const Origin = sequelize.define(alias, cols, config);
 

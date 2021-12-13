@@ -9,18 +9,18 @@
 
     <!-- listar los productos -->
     <div class="main-home1">
-    <% products.forEach(function(product){%>
+    <% movie.forEach(function(movie){%>
 
         <article>
-            <a href="http://localhost:3031/productos/<%=product.id%>"><img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt=""></a>
+            <a href="http://localhost:3031/productos/<%=movie.id%>"><img class="peliculas" src="\Images\pelicula-<%= movie.image%>" class = "peliculas" alt=""></a>
             <h3>ESTRENO</h3>
             <h4>A PUERTAS CERRADAS</h4>
 
             <div id="botones">
-            <form action="/productos/edit/<%=product.id%>" method="get">
+            <form action="/productos/editar/<%=movie.id%>" method="get">
             <button  id="botones1" type="submit">Editar</button>
             </form>
-            <form action="/productos/eliminar/<%=product.id%>?_method=DELETE" method="POST">
+            <form action="/productos/eliminar/<%=movie.id%>?_method=DELETE" method="POST">
             <button  type="submit" id="botones1">Eliminar</button>
             </form>
             </div>

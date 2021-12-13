@@ -9,10 +9,10 @@
     <main>
         <p id="titulo">PELICULAS</p>
         <div class="main-home">
-        <% products.forEach(function(product){%>
+        <% movies.forEach(function(movies){%>
 
             <article>
-                <a href="http://localhost:3031/productos/<%=product.id%>"><img class="peliculas" src="\Images\<%= product.imagen%>" class = "peliculas" alt=""></a>
+                <a href="http://localhost:3031/productos/<%=movies.id%>"><img class="peliculas" src="\Images\<%= movies.image%>" class = "peliculas" alt=""></a>
                 <h3>ESTRENO</h3>
                 <h4>A PUERTAS CERRADAS</h4>
             </article>

@@ -26,28 +26,72 @@
                 <label for="" id="imagen1">Imagen película</label>
             </div>
             <div class="grupo">
-                <input type="text" name="origen" id="name" required><span class="barra"></span>
+                <!-- <input type="text" name="origen" id="name" required><span class="barra"></span> -->
                 <label for="">Origen</label>
+                <p>
+                    <select name="origin" id="" required>
+                        <option value="" disabled selected>- Seleccione el origen - </option>
+                        <% allOrigins.forEach(origin => { %>
+                        <option value="<%= origin.id %>"><%= origin.name %></option>
+                        <% }); %>
+                    </select>
+                </p>
             </div>
             <div class="grupo">
-                <input type="text" name="genero" id="name" required><span class="barra"></span>
+                <!-- <input type="text" name="genero" id="name" required><span class="barra"></span> -->
                 <label for="">Genero</label>
+                <p>
+                    <select name="genero" id="" required>
+                        <option value="" disabled selected>- Seleccione el género - </option>
+                        <% allGenres.forEach(genre => { %>
+                        <option value="<%= genre.id %>"><%= genre.name %></option>
+                        <% }); %>
+                    </select>
+                </p>
             </div>
             <div class="grupo">
-                <input type="text" name="director" id="name" required><span class="barra"></span>
+                <!-- <input type="text" name="director" id="name" required><span class="barra"></span> -->
                 <label for="">Director</label>
+                <p>
+                    <select name="director" id="" required>
+                        <option value="" disabled selected>- Seleccione el director - </option>
+                        <% allDirectors.forEach(director => { %>
+                        <option value="<%= director.id %>"><%= director.first_name %> <%= director.last_name %></option>
+                        <% }); %>
+                    </select>
+                </p>
             </div>
             <div class="grupo">
-                <input type="text" name="actores" id="name" required><span class="barra"></span>
+                <!-- <input type="text" name="actores" id="name" required><span class="barra"></span> -->
                 <label for="">Actores</label>
+                <p>
+                    <select name="actor" id="" required>
+                        <option value="" disabled selected>- Seleccione el actor - </option>
+                        <% allActors.forEach(actor => { %>
+                        <option value="<%= actor.id %>"><%= actor.first_name %> <%= actor.last_name %></option>
+                        <% }); %>
+                    </select>
+                </p>
             </div>
             <div class="grupo">
-                <input type="text" name="calificacion" id="name" required><span class="barra"></span>
+                <!-- <input type="text" name="calificacion" id="name" required><span class="barra"></span> -->
                 <label for="">Calificación</label>
+                <p>
+                    <select name="calification" id="" required>
+                        <option value="" disabled selected>- Seleccione la calificacion - </option>
+                        <% allCalifications.forEach(calification => { %>
+                        <option value="<%= calification.id %>"><%= calification.name %></option>
+                        <% }); %>
+                    </select>
+                </p>
             </div>
             <div class="grupo">
-                <input type="text" name="duracion" id="name" required><span class="barra"></span>
+                <input type="text" name="length" id="name" required><span class="barra"></span>
                 <label for="">Duración</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="rating" id="name" required><span class="barra"></span>
+                <label for="">Rating</label>
             </div>
             <div class="grupo">
                 <input type="text" name="sinopsis" id="name" required><span class="barra"></span>
