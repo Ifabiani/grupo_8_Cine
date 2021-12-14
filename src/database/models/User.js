@@ -31,7 +31,7 @@ module.exports = (sequelize, dataTypes) => {
         },   
         category_id: {
             type: dataTypes.BIGINT(10),
-            allowNull:false
+            allowNull: true
         },
         created_at: {
             type: dataTypes.DATE,

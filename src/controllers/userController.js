@@ -180,19 +180,18 @@ const userController = {
     },
 
     add: function (req, res) {
-        let promCategory = db.Category.findAll();
+        // let promCategory = db.Category.findAll();
         
-        Promise
-        .all([promCategory])
-        .then(([category]) => {
-            return res.render(path.join(__dirname,'../Views/users/registro.ejs'), {category:category})})
+        // Promise
+        // .all([promCategory])
+        db.Category.findAll()
+        .then((category) => {
+            return res.render(path.join(__dirname,'../Views/users/registro.ejs'), {category: category})})
         .catch(error => res.send(error))
     },
 
     create: function (req,res) {
 
-        db.User.findAll()
-        .then((users)=> {
         const errors = validationResult(req);
     
         if (errors.isEmpty()){
@@ -203,10 +202,27 @@ const userController = {
                     imageName = 'default-image.png'
         }
         
-        for (let i=0; i<users.length; i++){
-            if (users[i].email == req.body.email){
-                res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: [{msg: 'Ya existe un usuario con el email declarado'}]})}}
-        }})
+        
+        // let userDb = db.User.findOne({where: {email: req.body.email},
+        //     }, 
+        // )
+
+        let promUser = db.User.findOne({where:{email: req.body.email}});
+        let promCategory = db.Category.findAll();
+        
+        Promise
+        .all([promUser, promCategory])
+        .then(([user,category])=>{
+            if (user){
+                res.render(path.join(__dirname,'../Views/users/registro.ejs'), {errors: [{msg: 'Ya existe un usuario con el email declarado'}], user, category})
+            }
+        })
+        .catch((error)=> console.log(error))
+
+        let userPassword = req.body.password;
+        let passwordHash = bcrypt.hashSync(userPassword, 10)
+        
+        
         db.User.create(
             
             {
@@ -214,19 +230,24 @@ const userController = {
                 last_name: req.body.apellido,
                 email: req.body.email,
                 birth: req.body.nacimiento,
-                password: req.body.password,
-                category_id: req.body.category,
+                password: passwordHash,
+                // category_id: req.body.category,
                 
+            },  {
+                include : ['category']
             }
         )
         .then(users => {
             res.redirect('/')
         })         
         .catch(error => res.send(error))
-    },
+    }else{
+        res.render((path.join(__dirname,'../Views/users/registro.ejs')), {errors: errors.array(), old: req.body})
+    }   
+    },   
 
     profile: (req, res) => {
-        db.user.findByPk(req.params.id,
+        db.User.findByPk(req.params.id,
             {
                 include : ['category']
             })
@@ -256,6 +277,7 @@ const userController = {
 
     update: function (req,res) {
         let userId = req.params.id;
+        let passwordHash = bcrypt.hashSync(req.body.password, 10)
         db.User
         .update(
             {
@@ -263,8 +285,8 @@ const userController = {
                 last_name: req.body.apellido,
                 email: req.body.email,
                 birth: req.body.nacimiento,
-                password: req.body.password,
-                category_id: req.body.category,
+                password: passwordHash,
+                // category_id: req.body.category,
             },
             {
                 where: {id: userId}
@@ -287,45 +309,61 @@ const userController = {
         res.render(path.join(__dirname,'../Views/users/login.ejs'))
     },
 
-    // login:(req, res)=> {
+    login:(req, res)=> {
 
-    // const errors = validationResult(req);
-    // let usuarioALoguearse
-    // if (errors.isEmpty()){
-    //     db.User.findAll()
-    //     .then(users =>{
-    //     for (let i=0; i<users.length; i++){
-    //         if (users[i].email == req.body.email){
-    //             if (bcrypt.compareSync(req.body.password, users[i].password)){
-    //                 usuarioALoguearse = users[i];               
-    //             }
-               
-    //         }
-            
-    //     }
-    //     if(req.body.remember_user) {
-    //         res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-    //     }
+    const errors = validationResult(req);
+    let usuarioALoguearse
+    if (errors.isEmpty()){
+        db.User.findOne({where: {email: req.body.email}})
+        .then(user =>{
+         if (user != null && bcrypt.compareSync(req.body.password, user.password)){
+         usuarioALoguearse = user; 
+         req.session.usuarioLogueado = usuarioALoguearse
+         console.log(usuarioALoguearse)
+         res.redirect('/')             
         
-    //     if(usuarioALoguearse == undefined){
-    //         res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
-    //     ]})
-    //     }
-    //     delete usuarioALoguearse.password;
-    //     req.session.usuarioLogueado = usuarioALoguearse;    
+        if(req.body.remember_user) {
+                res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+            }
+        if(usuarioALoguearse == null){
+        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
+        ]})
+        }
         
-    //     }) 
+        // delete usuarioALoguearse.password;
+        req.session.usuarioLogueado = usuarioALoguearse
+        console.log(usuariologueado)
+        
     
-        
-    // }else{
-    //     res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
+    
+    
+    
+    
+    
+        // if(req.body.remember_user) {
+        //     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+        // }
+    }else{
+        res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})}
+        // if(usuarioALoguearse == undefined){
+        //     res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: [{msg: 'Credenciales inválidas'}
+        // ]})
+        // }
+        // // delete usuarioALoguearse.password;
+        // req.session.usuarioLogueado = usuarioALoguearse;    
+    
+        // }else{
+        // res.render((path.join(__dirname,'../Views/users/login.ejs')), {errors: errors.array(), old: req.body})
 
-    // }
     
     
-    // res.redirect('/')
     
-    // },
+        // res.redirect('/')
+    
+    })
+    .catch(function(err){console.log(err)})
+    }
+    },
 
     logout: function(req, res, file){
         res.clearCookie('userEmail');

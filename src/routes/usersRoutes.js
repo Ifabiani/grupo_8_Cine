@@ -44,10 +44,10 @@ router.put('/editar/:id', upload.single('imagen'), controller.update);
 router.delete('/eliminar/:id', controller.destroy);
 
 //Ruta que trae el formulario de login
-router.get('/login', guestMiddleware, controller.login);
+router.get('/login', guestMiddleware, controller.log);
 
 //Ruta que logea a un usuario
-router.post('/login', upload.single('imagen'), validacionesLogin, controller.logeo);
+router.post('/login', upload.single('imagen'), validacionesLogin, controller.login);
 
 //Ruta para deslogear un usuario
 router.get('/logout', authMiddleware, controller.logout);
