@@ -231,6 +231,7 @@ const userController = {
                 email: req.body.email,
                 birth: req.body.nacimiento,
                 password: passwordHash,
+                image: imageName
                 // category_id: req.body.category,
                 
             },  {
@@ -278,6 +279,12 @@ const userController = {
     update: function (req,res) {
         let userId = req.params.id;
         let passwordHash = bcrypt.hashSync(req.body.password, 10)
+        let imageName;
+        if (req.file != undefined) {
+                imageName = req.file.filename
+        } else {
+                    imageName = 'default-image.jpg'
+        }
         db.User
         .update(
             {
@@ -286,6 +293,7 @@ const userController = {
                 email: req.body.email,
                 birth: req.body.nacimiento,
                 password: passwordHash,
+                image: imageName,
                 // category_id: req.body.category,
             },
             {

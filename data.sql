@@ -1,8 +1,8 @@
 insert into genres values ( 1, 'Crimen/Drama', 1, null, null);
 insert into genres values ( 2, 'Drama', 1, null, null);
-insert into genres values ( 3, 'Acción/ Ciencia Ficción', 1, null, null);
+insert into genres values ( 3, 'Acciï¿½n/ Ciencia Ficciï¿½n', 1, null, null);
 insert into genres values ( 4, 'Drama/Romance', 1, null, null);
-insert into genres values ( 5, 'Acción', 1, null, NULL);
+insert into genres values ( 5, 'Acciï¿½n', 1, null, NULL);
 insert into genres values ( 6, 'Suspenso/Drama', 1, null, null);
 
 insert into ORIGIN values (1, 'Estados Unidos', null, NULL);
@@ -10,7 +10,7 @@ insert into ORIGIN values (2, 'Reino Unido', null, NULL);
 insert into ORIGIN values (3, 'Argentina', null, NULL);
 insert into ORIGIN values (4, 'Francia', null, NULL);
 insert into ORIGIN values (5, 'Italia', null, NULL);
-insert into ORIGIN values (6, 'España', null, NULL);
+insert into ORIGIN values (6, 'Espaï¿½a', null, NULL);
 
 insert into CALIFICATION values (1, 'ATP', null, NULL);
 insert into CALIFICATION values (2, '+13', null, NULL);
@@ -51,7 +51,7 @@ insert into ACTORS values (29, 'Edward', 'Norton', null, null);
 insert into directors values (1, 'Clint', 'Eastwood', null, null);
 insert into directors values (2, 'Jim', 'Sheridan', null, null);
 insert into directors values (3, 'Martin', 'Scorsese', null, null);
-insert into directors values (4, 'Alejandro', 'Gonzalez Iñarritu', null, null);
+insert into directors values (4, 'Alejandro', 'Gonzalez Iï¿½arritu', null, null);
 insert into directors values (5, 'Christopher', 'Nolan', null, null);
 insert into directors values (6, 'Mimi', 'Leder', null, null);
 insert into directors values (7, 'Francis', 'Ford Coppola', null, null);
@@ -59,18 +59,18 @@ insert into directors values (8, 'Martin', 'Brest', null, null);
 insert into directors values (9, 'Ridley', 'Scott', null, null);
 insert into directors values (10, 'David', 'Fincher', null, null);
 
-insert into movies values (1, 'Rio Místico', 8.5, 137, 1, 1, 2, 'Los viejos amigos de la infancia Jimmy, Sean y Dave se reencuentran de adultos tras el asesinato de la hija de uno de ellos. Las rencillas del pasado envenenan la investigación que, de forma paralela a la policía, llevan para hallar al asesino.', null, null, null, null );
-insert into movies values (2, 'En el nombre del padre', 9.4, 141, 2, 1, 2, 'Se basa en la historia real de los Cuatro de Guildford, cuatro personas falsamente condenadas por los atentados con bombas en el pub de Guildford de 1974, en los que murieron cuatro soldados británicos fuera de servicio y un civil.', null, null, null, null );
-insert into movies values (3, 'Pandilla de New York', 8.7, 125, 1, 1, 2, 'En medio de una guerra civil, la joven nación se encuentra al borde del caos. Pero en Five Points, el barrio más pobre de Nueva York, donde impera la miseria, la delincuencia y el crimen organizado, se está librando otra guerra.', null, null, null, null );
+insert into movies values (1, 'Rio Mï¿½stico', 8.5, 137, 1, 1, 2, 'Los viejos amigos de la infancia Jimmy, Sean y Dave se reencuentran de adultos tras el asesinato de la hija de uno de ellos. Las rencillas del pasado envenenan la investigaciï¿½n que, de forma paralela a la policï¿½a, llevan para hallar al asesino.', null, null, null, null );
+insert into movies values (2, 'En el nombre del padre', 9.4, 141, 2, 1, 2, 'Se basa en la historia real de los Cuatro de Guildford, cuatro personas falsamente condenadas por los atentados con bombas en el pub de Guildford de 1974, en los que murieron cuatro soldados britï¿½nicos fuera de servicio y un civil.', null, null, null, null );
+insert into movies values (3, 'Pandilla de New York', 8.7, 125, 1, 1, 2, 'En medio de una guerra civil, la joven naciï¿½n se encuentra al borde del caos. Pero en Five Points, el barrio mï¿½s pobre de Nueva York, donde impera la miseria, la delincuencia y el crimen organizado, se estï¿½ librando otra guerra.', null, null, null, null );
 insert into movies values (4, '21 gramos', 7.7, 117, 1, 1, 2, 'Paul es un profesor universitario con una dolencia coronaria muy grave. Cristina vive una existencia de cuento de hadas. Y Jack es un exconvicto de fuertes convicciones religiosas que lucha por sacar adelante a su familia.', null, null, null, null );
-insert into movies values (5, 'El Orgien', 8.9, 121, 3, 1, 2, 'Dom Cobb es un ladrón con una extraña habilidad para entrar a los sueños de la gente y robarles los secretos de sus subconscientes. Cobb obtiene la oportunidad de redimirse cuando recibe una tarea imposible: plantar una idea en la mente de una persona.', null, null, null, null );
-insert into movies values (6, 'Cadena de Favores', 7.9, 107, 4, 1, 2, 'Trevor decide llevar a cabo un experimento para su clase de ciencias sociales bajo una simple premisa: él hará una serie de favores a tres personas y, a cambio, ellos le devolverán el favor haciendo algo para otras tres, y así sucesivamente.', null, null, null, null );
-insert into movies values (7, 'El Padrino', 8.7, 181, 1, 1, 2, 'Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los años 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre.', null, null, null, null );
-insert into movies values (8, 'El Padrino II', 9.1, 185, 1, 1, 2, 'Michael es elegido para liderar los negocios familiares. El nuevo cabeza de familia debe lidiar con un panorama cambiante de amistades y enemistades, al tener que negociar con la mafia judía y perder el apoyo de Frankie.', null, null, null, null );
-insert into movies values (9, 'El Padrino III', 8.9, 179, 1, 1, 2, 'Michael intenta legitimizar todas las posesiones de la familia negociando con el Vaticano. Después de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios.', null, null, null, null );
-insert into movies values (10, 'Perfume de mujer', 7.9, 157, 2, 1, 2, 'Frank, un militar ciego, emprende un viaje a Nueva York con un joven recluta que le cuida durante Acción de Gracias. Frank está dispuesto a matar a un antiguo compañero de armas, y después, suicidarse', null, null, null, null );
-insert into movies values (11, 'Gladiador', 8.1, 155, 5, 1, 2, 'El general romano Máximo es el soporte más leal del emperador Marco Aurelio, que lo ha conducido de victoria en victoria. Sin embargo, Cómodo, el hijo de Marco Aurelio, está celoso del prestigio de Máximo y aún más del amor que su padre siente por él.', null, null, null, null );
-insert into movies values (12, 'El club del a pelea', 8.3, 139, 6, 1, 2, 'Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organización crece y sus objetivos toman otro rumbo.', null, null, null, null );
+insert into movies values (5, 'El Orgien', 8.9, 121, 3, 1, 2, 'Dom Cobb es un ladrï¿½n con una extraï¿½a habilidad para entrar a los sueï¿½os de la gente y robarles los secretos de sus subconscientes. Cobb obtiene la oportunidad de redimirse cuando recibe una tarea imposible: plantar una idea en la mente de una persona.', null, null, null, null );
+insert into movies values (6, 'Cadena de Favores', 7.9, 107, 4, 1, 2, 'Trevor decide llevar a cabo un experimento para su clase de ciencias sociales bajo una simple premisa: ï¿½l harï¿½ una serie de favores a tres personas y, a cambio, ellos le devolverï¿½n el favor haciendo algo para otras tres, y asï¿½ sucesivamente.', null, null, null, null );
+insert into movies values (7, 'El Padrino', 8.7, 181, 1, 1, 2, 'Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York en los aï¿½os 40. El hombre tiene cuatro hijos: Connie, Sonny, Fredo y Michael, que no quiere saber nada de los negocios sucios de su padre.', null, null, null, null );
+insert into movies values (8, 'El Padrino II', 9.1, 185, 1, 1, 2, 'Michael es elegido para liderar los negocios familiares. El nuevo cabeza de familia debe lidiar con un panorama cambiante de amistades y enemistades, al tener que negociar con la mafia judï¿½a y perder el apoyo de Frankie.', null, null, null, null );
+insert into movies values (9, 'El Padrino III', 8.9, 179, 1, 1, 2, 'Michael intenta legitimizar todas las posesiones de la familia negociando con el Vaticano. Despuï¿½s de luchar toda su vida se encuentra cansado y centra todas sus esperanzas en encontrar a un sucesor que se haga cargo de los negocios.', null, null, null, null );
+insert into movies values (10, 'Perfume de mujer', 7.9, 157, 2, 1, 2, 'Frank, un militar ciego, emprende un viaje a Nueva York con un joven recluta que le cuida durante Acciï¿½n de Gracias. Frank estï¿½ dispuesto a matar a un antiguo compaï¿½ero de armas, y despuï¿½s, suicidarse', null, null, null, null );
+insert into movies values (11, 'Gladiador', 8.1, 155, 5, 1, 2, 'El general romano Mï¿½ximo es el soporte mï¿½s leal del emperador Marco Aurelio, que lo ha conducido de victoria en victoria. Sin embargo, Cï¿½modo, el hijo de Marco Aurelio, estï¿½ celoso del prestigio de Mï¿½ximo y aï¿½n mï¿½s del amor que su padre siente por ï¿½l.', null, null, null, null );
+insert into movies values (12, 'El club del a pelea', 8.3, 139, 6, 1, 2, 'Un empleado de oficina insomne, harto de su vida, se cruza con un vendedor peculiar. Ambos crean un club de lucha clandestino como forma de terapia y, poco a poco, la organizaciï¿½n crece y sus objetivos toman otro rumbo.', null, null, null, null );
 
 insert into actor_movie values (1, 1 ,1, null, null);
 insert into actor_movie values (2, 2 ,1, null, null);
@@ -133,4 +133,24 @@ insert into users values (1, 'Ignacio', 'Fabiani', 'ignacio@gmail.com', 'ignacio
 insert into users values (2, 'Thomas', 'Whitney', 'thomas@gmail.com', 'thomas123', '1985-01-01', 1, null, null);
 insert into users values (3, 'Marcos', 'Corti', 'marcos@gmail.com', 'marcos123', '1985-01-01', 1, null, null);
 insert into users values (4, 'Juan Manuel', 'Pedrozo', 'juanmanuel@gmail.com', 'juanmanuel123', '1985-01-01', 1, null, null);
+
+update movies set image = 'pelicula-1' where id=1;
+update movies set image = 'pelicula-2' where id=2;
+update movies set image = 'pelicula-3' where id=3;
+update movies set image = 'pelicula-4' where id=4;
+update movies set image = 'pelicula-5' where id=5;
+update movies set image = 'pelicula-6' where id=6;
+update movies set image = 'pelicula-7' where id=7;
+update movies set image = 'pelicula-8' where id=8;
+update movies set image = 'pelicula-9' where id=9;
+update movies set image = 'pelicula-10' where id=10;
+update movies set image = 'pelicula-11' where id=11;
+update movies set image = 'pelicula-12' where id=12;
+
+update users set image = 'usuario-5' where id=1;
+update users set image = 'usuario-5' where id=2;
+update users set image = 'usuario-5' where id=3;
+update users set image = 'usuario-5' where id=4;
+update users set image = 'usuario-5' where id=5;
+update users set image = 'usuario-5' where id=17;
 

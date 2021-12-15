@@ -148,8 +148,9 @@ const productController = {
     },
 
     create: function (req,res) {
-        db.Movie
-        .create(
+        let newProductImage = "default-image.png";
+        if (req.file != undefined) {newProductImage = req.file.filename; }
+        db.Movie.create(
             
             {
                 title: req.body.name,
@@ -162,9 +163,11 @@ const productController = {
                 rating: req.body.rating,
                 synopsis: req.body.sinopsis,
                 release_date: req.body.release_date,
+                image: newProductImage
             }
         )
-        .then(()=> {
+        .then((movie)=> {
+            console.log(movie)
             return res.redirect('/')})            
         .catch(error => res.send(error))
     },
@@ -202,6 +205,8 @@ const productController = {
 
     update: function (req,res) {
         let movieId = req.params.id;
+        let newProductImage = "default-image.png";
+        if (req.file != undefined) {newProductImage = req.file.filename; }
         db.Movie
         .update(
             {
@@ -215,6 +220,7 @@ const productController = {
                 rating: req.body.rating,
                 synopsis: req.body.sinopsis,
                 release_date: req.body.release_date,
+                image: newProductImage
             },
             {
                 where: {id: movieId}

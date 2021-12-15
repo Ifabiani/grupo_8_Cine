@@ -41,6 +41,10 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.DATE,
             allowNull: true
         },
+        image: {
+            type: dataTypes.STRING(255),
+            allowNull: true
+        }
         
     };
     let config = {

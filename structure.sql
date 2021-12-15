@@ -13,6 +13,10 @@ CREATE TABLE `movies` (
    PRIMARY KEY (`id`)
 );
 
+ALTER TABLE movies
+   ADD image VARCHAR(255)
+;
+
 CREATE TABLE `genres` (
    `id` INT NOT NULL AUTO_INCREMENT,
    `name` VARCHAR(100) NOT NULL,
@@ -72,6 +76,10 @@ CREATE TABLE `users` (
    `updated_at` TIMESTAMP NULL,
    PRIMARY KEY (`id`)
 );
+
+ALTER TABLE users
+   ADD image VARCHAR(255)
+;
 
 CREATE TABLE `category` (
    `id` INT NOT NULL AUTO_INCREMENT,
