@@ -130,9 +130,11 @@ insert into category values (1, 'Administrador', null, null);
 insert into category values (2, 'Usuario', null, null);
 
 insert into users values (1, 'Ignacio', 'Fabiani', 'ignacio@gmail.com', 'ignacio123', '1987-07-02', 1, null, null);
-insert into users values (2, 'Thomas', 'Whitney', 'thomas@gmail.com', 'thomas123', '1985-01-01', 1, null, null);
+insert into users values (2, 'Thomas', 'Whitney', 'thomas@gmail.com', 'thomas123', '1985-01-01', 2, null, null);
 insert into users values (3, 'Marcos', 'Corti', 'marcos@gmail.com', 'marcos123', '1985-01-01', 1, null, null);
 insert into users values (4, 'Juan Manuel', 'Pedrozo', 'juanmanuel@gmail.com', 'juanmanuel123', '1985-01-01', 1, null, null);
+insert into users values (5, 'Ignacio', 'Fabiani', 'ignacio6@gmail.com', '$2a$10$UeST40etFr49RXmBoGoyDue7saM6QKxL51Se/SqyPRjP5JaheNeme', '1987-07-02', 1, null, null);
+insert into users values (5, 'Jose', 'Perez', 'jose1234@gmail.com', '$2a$10$PsApnyceDjda3nSaP4fkB.VRsO9HeZiZHJHlI.N3AKuXy2Ak.Yy0y', '1987-08-02', 1, null, null)
 
 update movies set image = 'pelicula-1' where id=1;
 update movies set image = 'pelicula-2' where id=2;
