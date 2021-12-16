@@ -147,6 +147,11 @@ const productController = {
         .catch(error => res.send(error))
     },
 
+    // Movie.findByPk(mmovie.id).then(movie => {
+    //     // tu código aquí
+    //     movie.setActors(req.body.actor)
+    // });
+
     create: function (req,res) {
         let newProductImage = "default-image.png";
         if (req.file != undefined) {newProductImage = req.file.filename; }
@@ -157,7 +162,7 @@ const productController = {
                 origin_id: req.body.origin,
                 genre_id: req.body.genero,
                 director: req.body.director,
-                actor: req.body.actores,
+                actor: req.body.actor,
                 calification_id: req.body.calification,
                 length: req.body.length,
                 rating: req.body.rating,
@@ -167,7 +172,12 @@ const productController = {
             }
         )
         .then((movie)=> {
-            console.log(movie)
+            // console.log(movie)
+            db.Movie.findByPk(movie.id).then(movie => {
+                //     // tu código aquí
+                    movie.setActors(req.body.actor)
+                    movie.setDirectors(req.body.director)
+                })
             return res.redirect('/')})            
         .catch(error => res.send(error))
     },
@@ -212,9 +222,9 @@ const productController = {
             {
                 title: req.body.name,
                 origin_id: req.body.origin,
-                genre_id: req.body.genero,
-                director: req.body.director,
-                actor: req.body.actors,
+                genre_id: req.body.genre,
+                // director: req.body.director,
+                // actor: req.body.actors,
                 calification_id: req.body.calification,
                 length: req.body.length,
                 rating: req.body.rating,
@@ -225,7 +235,15 @@ const productController = {
             {
                 where: {id: movieId}
             })
-        .then((Movie)=> {
+        // .then((movie)=>{
+        //     db.Actor_movie.destroy({where: {movie_id: movie.id}})
+        // })
+        .then((movie)=> {
+            db.Movie.findByPk(movie.id)
+            .then(movie => {
+                    movie.setActors(req.body.actor)
+                    movie.setDirectors(req.body.director)
+                })
             return res.redirect('/')})            
         .catch(error => res.send(error))
     },

@@ -53,7 +53,7 @@
                 <!-- <input type="text" name="director" id="name" required><span class="barra"></span> -->
                 <label for="">Director</label>
                 <p>
-                    <select name="director" id="" required>
+                    <select name="director[]" id="" required>
                         <option value="" disabled selected>- Seleccione el director - </option>
                         <% allDirectors.forEach(director => { %>
                         <option value="<%= director.id %>"><%= director.first_name %> <%= director.last_name %></option>
@@ -94,10 +94,11 @@
                 <label for="">Rating</label>
             </div>
             <div class="grupo">
-                <input type="text" name="sinopsis" id="name" required><span class="barra"></span>
+                <input type="text" name="synopsis" id="name" required><span class="barra"></span>
                 <label for="">Sinopsis</label>
             </div>
             <button class="button2" type="submit">Crear</button>
+            <button class="button2" type="submit"><a id="cancelar" href="http://localhost:3031/productos">Cancelar</a></button>
 
         </div>
 
