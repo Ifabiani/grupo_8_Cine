@@ -33,8 +33,8 @@ Dejar de hacer: nada para comentar
 
 Retro del Sprint 5
 
-<!-- Comenzar a hacer: trabajar con ramas, creemos que es una buena alternativa para ser creativos sin romper el proyecto principal
-Hacer más: reuniones periódicas, ya lo implementamos y lo reforzaremos.
+Comenzar a hacer: tratar de subir el proyecto a un servidor
+Hacer más: coordinar mejor las actualizaciones, con base de datos se va a complicar sino
 Continuar haciendo: la división de tareas y el trabajo independiente.
 Hacer menos: nada para comentar
-Dejar de hacer: nada para comentar -->
+Dejar de hacer: nada para comentar
