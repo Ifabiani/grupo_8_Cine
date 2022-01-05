@@ -2,6 +2,7 @@ const express = require('express');
 const db = require('../database/models')
 const path = require('path');
 const fs = require('fs');
+const {validationResult} = require('express-validator');
 const sequelize = db.sequelize;
 const { Op} = require('sequelize');
 
@@ -153,7 +154,10 @@ const productController = {
     // });
 
     create: function (req,res) {
+        
+        const errors = validationResult(req);
         let newProductImage = "default-image.png";
+        if (errors.isEmpty()){
         if (req.file != undefined) {newProductImage = req.file.filename; }
         db.Movie.create(
             
@@ -166,7 +170,7 @@ const productController = {
                 calification_id: req.body.calification,
                 length: req.body.length,
                 rating: req.body.rating,
-                synopsis: req.body.sinopsis,
+                synopsis: req.body.synopsis,
                 release_date: req.body.release_date,
                 image: newProductImage
             }
@@ -179,7 +183,20 @@ const productController = {
                     movie.setDirectors(req.body.director)
                 })
             return res.redirect('/')})            
-        .catch(error => res.send(error))
+        .catch(error => res.send(error))}
+        else{
+        let promGenres = Genres.findAll();
+        let promActors = Actors.findAll();
+        let promDirectors = Directors.findAll();
+        let promOrigin = Origins.findAll();
+        let promCalifications = Califications.findAll();
+        
+        Promise
+        .all([promGenres, promActors, promDirectors, promOrigin, promCalifications])
+        .then(([allGenres, allActors, allDirectors, allOrigins, allCalifications]) => {
+            return res.render((path.join(__dirname,'../Views/products/crearProducto.ejs')), {errors: errors.array(), old: req.body,allGenres, allActors, allDirectors, allOrigins, allCalifications})})
+            // res.render((path.join(__dirname,'../Views/products/crearProducto.ejs')), {errors: errors.array(), old: req.body, allGenres, allActors, allDirectors, allOrigins, allCalifications})}.catch((err) => {err})
+        }
     },
     detail: (req, res) => {
         db.Movie.findByPk(req.params.id,

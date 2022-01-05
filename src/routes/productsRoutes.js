@@ -5,6 +5,7 @@ const multer = require('multer');
 const path = require('path');
 const authMiddleware = require('../Middlewares/authMiddleware.js')
 const adminMiddleware = require('../Middlewares/adminMiddleware.js')
+const validacionesProducto = require('../Middlewares/validacionesProducto')
 
 const fs = require('fs');
 
@@ -29,7 +30,7 @@ router.get('/', authMiddleware, adminMiddleware, controller.movies)
 
 //Ruta que trae y crea peliculas
 router.get('/crear', authMiddleware, adminMiddleware, controller.add);
-router.post('/', upload.single('imagen'), authMiddleware , adminMiddleware, controller.create)
+router.post('/', upload.single('imagen'), authMiddleware , adminMiddleware, validacionesProducto, controller.create)
 
 //Ruta del carrito de peliculas
 router.get('/carrito/:id', authMiddleware, controller.cart);

@@ -17,8 +17,12 @@
         <div class="form">
 
             <h1>CREAR PRODUCTO</h1>
+            <% if (locals.errors) { 
+                errors.forEach(error => { %> 
+                    <p id="error"><%=error.msg%></p>
+                    <%})}%>
             <div class="grupo">
-                <input type="text" name="name" id="name" required><span class="barra"></span>
+                <input type="text" name="name" id="name" value="<%= locals.old && old.name ? old.name : null %>" required><span class="barra"></span>
                 <label for="">Nombre película</label>
             </div>
             <div class="grupo">
@@ -26,7 +30,7 @@
                 <label for="" id="imagen1">Imagen película</label>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="origen" id="name" required><span class="barra"></span> -->
+                <!-- <input type="text" name="origen" id="name"  required><span class="barra"></span> -->
                 <label for="">Origen</label>
                 <p>
                     <select name="origin" id="" required>
@@ -38,7 +42,7 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="genero" id="name" required><span class="barra"></span> -->
+                <!-- <input type="text" name="genero" id="name"  required><span class="barra"></span> -->
                 <label for="">Genero</label>
                 <p>
                     <select name="genero" id="" required>
@@ -50,7 +54,7 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="director" id="name" required><span class="barra"></span> -->
+                <!-- <input type="text" name="director" id="name"  required><span class="barra"></span> -->
                 <label for="">Director</label>
                 <p>
                     <select name="director[]" id="" required>
@@ -74,7 +78,7 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="calificacion" id="name" required><span class="barra"></span> -->
+                <!-- <input type="text" name="calificacion" id="name"  required><span class="barra"></span> -->
                 <label for="">Calificación</label>
                 <p>
                     <select name="calification" id="" required>
@@ -86,15 +90,15 @@
                 </p>
             </div>
             <div class="grupo">
-                <input type="text" name="length" id="name" required><span class="barra"></span>
+                <input type="text" name="length" id="name" value="<%= locals.old && old.length ? old.length : null %>" required><span class="barra"></span>
                 <label for="">Duración</label>
             </div>
             <div class="grupo">
-                <input type="text" name="rating" id="name" required><span class="barra"></span>
+                <input type="text" name="rating" id="name" value="<%= locals.old && old.rating ? old.rating : null %>" required><span class="barra"></span>
                 <label for="">Rating</label>
             </div>
             <div class="grupo">
-                <input type="text" name="synopsis" id="name" required><span class="barra"></span>
+                <input type="text" name="synopsis" id="name" value="<%= locals.old && old.synopsis ? old.synopsis : null %>" required><span class="barra"></span>
                 <label for="">Sinopsis</label>
             </div>
             <button class="button2" type="submit">Crear</button>
