@@ -1,7 +1,7 @@
 const path = require('path');
 const {body} = require('express-validator');
 let validacionesRegistro = [
-    body('nombre').notEmpty().withMessage('El campo nombre no puede estar vacío').bail().isLength({min:2}),
+    body('nombre').notEmpty().withMessage('El campo nombre no puede estar vacío').bail().isLength({min:2}).withMessage("El campo nombre debe contener al menos dos caracteres"),
     body('apellido').notEmpty().withMessage('El campo apellido no puede estar vacío'),
     body('nacimiento').notEmpty().withMessage('El campo nacimiento no puede estar vacío'),
     body('email').notEmpty().withMessage('El campo email no puede estar vacío').bail().isEmail().withMessage('Debes colocar un email válido'),

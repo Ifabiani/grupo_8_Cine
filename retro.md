@@ -38,3 +38,11 @@ Hacer más: coordinar mejor las actualizaciones, con base de datos se va a compl
 Continuar haciendo: la división de tareas y el trabajo independiente.
 Hacer menos: nada para comentar
 Dejar de hacer: nada para comentar
+
+Retro del Sprint 6
+
+Comenzar a hacer: tratar de adelantar el sprint siguiente
+Hacer más: juntarnos
+Continuar haciendo: la división de tareas y el trabajo independiente.
+Hacer menos: nada para comentar
+Dejar de hacer: volver a no dejar para lo último las tareas

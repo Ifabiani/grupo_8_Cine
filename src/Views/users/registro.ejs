@@ -13,7 +13,7 @@
         <a href="http://localhost:3031/"><img id="logo-registro" src="\Images\logo-1.png" alt=""></a>
 
     </div>
-    <form action="/usuarios/registrar" method="POST" id="form-registro" enctype="multipart/form-data">
+    <form action="/usuarios/registrar" method="POST" name="registro" id="form-registro" enctype="multipart/form-data">
         <div class="form">
 
             <h1>REGISTRO</h1>
@@ -22,40 +22,45 @@
                     <p id="error"><%=error.msg%></p>
                     <%})}%>
             <div class="grupo">
-                <input type="text" name="nombre" id="name" value="<%= locals.old && old.nombre ? old.nombre : null %>"><span class="barra"></span>
+                <input type="text" name="nombre" class="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null %>"><span class="barra"></span>
                 <label for="">Nombre</label>               
             </div>
             <div class="grupo">
-                <input type="text" name="apellido" id="name" value="<%= locals.old && old.apellido ? old.apellido : null %>"><span class="barra"></span>
+                <input type="text" name="apellido" id="apellido" value="<%= locals.old && old.apellido ? old.apellido : null %>"><span class="barra"></span>
                 <label for="">Apellido</label>
             </div>
             <div class="grupo">
-                <input type="date" name="nacimiento" id="name" id="fecha" value="<%= locals.old && old.nacimiento ? old.nacimiento : null %>" ><span class="barra"></span>
+                <input type="date" name="nacimiento"  id="fecha" value="<%= locals.old && old.nacimiento ? old.nacimiento : null %>" ><span class="barra"></span>
                 <label for="" id="fecha">Fecha de nacimiento</label>
             </div>
             <div class="grupo">
-                <input type="email" name="email" id="name" value="<%= locals.old && old.email ? old.email : null %>" ><span class="barra"></span>
+                <input type="text" name="email"  id="email" value="<%= locals.old && old.email ? old.email : null %>" ><span class="barra"></span>
                 <label for="">Email</label>
             </div>
             <div class="grupo">
-                <input type="password" name="password" id="name" value="<%= locals.old && old.password ? old.password : null %>"><span class="barra"></span>
+                <input type="password" name="password" id="password" value="<%= locals.old && old.password ? old.password : null %>"><span class="barra"></span>
                 <label for="">Contraseña</label>
             </div >
                          
         
             <div class="grupo">
-                <input type="file" name="imagen" id="name" ><span class="barra"></span>
+                <input type="file" name="imagen"  id="imagen"><span class="barra"></span>
                 <label for="" id="fecha">Imagen</label>
             </div >
-            <div class= botones>
+            <div class= "botones">
             <button class="button2" type="submit">Registrarse</button>
             <button class="button2" type="submit" ><a id="cancelar" href="http://localhost:3031/">Cancelar</a></button>
             </div>   
         </div>
-
+        <div class="errores">
+    <ul>
+    </ul>    
+    </div>
 
     </form>
+    
     <span class="footer-registro"><%-include ('../partials/footer')%></span>
+    <script src="/js/registroUsuario.js"></script>
 </body>
 
 </html>

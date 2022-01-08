@@ -9,3 +9,7 @@ Seguimos con la comunicación con el grupo de Whatsapp que es lo más cómodo, r
 Sprint 5
 
 WA como medio principal de comunicación. Reunión semanal muy beneficiosa.
+
+Sprint 6
+
+WA como medio principal de comunicación.

@@ -22,18 +22,18 @@
                     <p id="error"><%=error.msg%></p>
                     <%})}%>
             <div class="grupo">
-                <input type="text" name="name" id="name" value="<%= locals.old && old.name ? old.name : null %>" required><span class="barra"></span>
+                <input type="text" name="name" id="nombre" value="<%= locals.old && old.name ? old.name : null %>"><span class="barra"></span>
                 <label for="">Nombre película</label>
             </div>
             <div class="grupo">
-                <input type="file" name="imagen" id="name"  required><span class="barra"></span>
+                <input type="file" name="imagen" id="imagen"  ><span class="barra"></span>
                 <label for="" id="imagen1">Imagen película</label>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="origen" id="name"  required><span class="barra"></span> -->
+                <!-- <input type="text" name="origen" id="origen" ><span class="barra"></span> -->
                 <label for="">Origen</label>
                 <p>
-                    <select name="origin" id="" required>
+                    <select name="origin" id="" >
                         <option value="" disabled selected>- Seleccione el origen - </option>
                         <% allOrigins.forEach(origin => { %>
                         <option value="<%= origin.id %>"><%= origin.name %></option>
@@ -42,10 +42,10 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="genero" id="name"  required><span class="barra"></span> -->
+                <!-- <input type="text" name="genero" id="genero"  ><span class="barra"></span> -->
                 <label for="">Genero</label>
                 <p>
-                    <select name="genero" id="" required>
+                    <select name="genero" id="" >
                         <option value="" disabled selected>- Seleccione el género - </option>
                         <% allGenres.forEach(genre => { %>
                         <option value="<%= genre.id %>"><%= genre.name %></option>
@@ -54,10 +54,10 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="director" id="name"  required><span class="barra"></span> -->
+                <!-- <input type="text" name="director" id="director"  ><span class="barra"></span> -->
                 <label for="">Director</label>
                 <p>
-                    <select name="director[]" id="" required>
+                    <select name="director[]" id="" >
                         <option value="" disabled selected>- Seleccione el director - </option>
                         <% allDirectors.forEach(director => { %>
                         <option value="<%= director.id %>"><%= director.first_name %> <%= director.last_name %></option>
@@ -66,10 +66,10 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="actores" id="name" required><span class="barra"></span> -->
+                <!-- <input type="text" name="actores" id="actores" ><span class="barra"></span> -->
                 <label for="">Actores</label>
                 <p>
-                    <select name="actor[]" size="3" check id="" multiple required>
+                    <select name="actor[]" size="3" check id="" multiple >
                         <option value="" disabled selected>- Seleccione el actor - </option>
                         <% allActors.forEach(actor => { %>
                         <option value="<%= actor.id %>"><%= actor.first_name %> <%= actor.last_name %></option>
@@ -78,10 +78,10 @@
                 </p>
             </div>
             <div class="grupo">
-                <!-- <input type="text" name="calificacion" id="name"  required><span class="barra"></span> -->
+                <!-- <input type="text" name="calificacion" id="calificacion"  ><span class="barra"></span> -->
                 <label for="">Calificación</label>
                 <p>
-                    <select name="calification" id="" required>
+                    <select name="calification" id="" >
                         <option value="" disabled selected>- Seleccione la calificacion - </option>
                         <% allCalifications.forEach(calification => { %>
                         <option value="<%= calification.id %>"><%= calification.name %></option>
@@ -90,15 +90,15 @@
                 </p>
             </div>
             <div class="grupo">
-                <input type="text" name="length" id="name" value="<%= locals.old && old.length ? old.length : null %>" required><span class="barra"></span>
+                <input type="text" name="length" id="duracion" value="<%= locals.old && old.length ? old.length : null %>" ><span class="barra"></span>
                 <label for="">Duración</label>
             </div>
             <div class="grupo">
-                <input type="text" name="rating" id="name" value="<%= locals.old && old.rating ? old.rating : null %>" required><span class="barra"></span>
+                <input type="text" name="rating" id="rating" value="<%= locals.old && old.rating ? old.rating : null %>" ><span class="barra"></span>
                 <label for="">Rating</label>
             </div>
             <div class="grupo">
-                <input type="text" name="synopsis" id="name" value="<%= locals.old && old.synopsis ? old.synopsis : null %>" required><span class="barra"></span>
+                <input type="text" name="synopsis" id="sinopsis" value="<%= locals.old && old.synopsis ? old.synopsis : null %>" ><span class="barra"></span>
                 <label for="">Sinopsis</label>
             </div>
             <button class="button2" type="submit">Crear</button>
@@ -106,9 +106,13 @@
 
         </div>
 
-
+        <div class="errores">
+    <ul>
+    </ul>    
+    </div>
     </form>
     <span class="footer-registro"><%-include ('../partials/footer')%></span>
+    <script src="/js/registroProducto.js"></script>
 </body>
 
 </html>
