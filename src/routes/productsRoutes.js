@@ -6,7 +6,6 @@ const path = require('path');
 const authMiddleware = require('../Middlewares/authMiddleware.js')
 const adminMiddleware = require('../Middlewares/adminMiddleware.js')
 const validacionesProducto = require('../Middlewares/validacionesProducto')
-
 const fs = require('fs');
 
 const productsFilePath = path.join(__dirname, '../Data/products.json');
@@ -24,6 +23,9 @@ const storage = multer.diskStorage({
 })
 
 const upload = multer({storage:storage});
+
+
+
 
 //Ruta que muestra todas las peliculas
 router.get('/', authMiddleware, adminMiddleware, controller.movies)
