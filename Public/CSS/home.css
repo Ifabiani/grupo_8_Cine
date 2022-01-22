@@ -233,6 +233,28 @@ main {
     width: 90vw;
 }
 
+.input{
+    display:none;
+}
+
+.tam{
+    width: 5rem;
+    height: 1.5rem;
+    background-color: black;
+    margin-left:10px;
+    font-size: 11px;
+    text-decoration: white;
+    
+}
+
+.input2{
+    display:none;
+}
+
+.flex{
+    display: flex;
+}
+
 .main-home{
     width: 90vw;
     text-align: center; 
@@ -580,6 +602,11 @@ h1 {
 .form {
     width: 100%;
     margin:auto;
+}
+
+.form-check-input{
+    margin-top:-20px;
+    vertical-align: middle;
 }
 
 form .grupo {

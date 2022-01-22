@@ -15,14 +15,16 @@
             <div  >
                 <div class="dropdown1" >
                     <div class="dropdown">
-                    <button class="dropbtn"><img id="avatar" src="\Images\Users\<%= locals.usuarioLogueado.image%>" alt=""> Hola, <%= locals.usuarioLogueado.first_name%>!</button>
-                    <div class="dropdown-content">
+                        <button class="dropbtn"><img id="avatar" src="\Images\Users\<%= locals.usuarioLogueado.image%>" alt=""> Hola, <%= locals.usuarioLogueado.first_name%>!  <i class="fas fa-caret-down"></i></button>
+                        <br>
+                    <div class="dropdown-content drop">
                       <a href="http://localhost:3031/usuarios/perfil">Mi perfil</a>
                       <a href="http://localhost:3031/usuarios/logout">Cerrar sesión</a>
                     </div>
                 </div>
                         <div id="cont3">
-                            <div><i class="fas fa-search"></i></div>
+                            <div class="flex"><i class="fas fa-search"></i> <input type="text" class="input tam"></div>
+                            
                                 <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
                         </div>
                 </div>
@@ -39,7 +41,8 @@
             <% } else { %>
             <div id="contenedor4">
             <div id="cont1" ><a href="http://localhost:3031/usuarios/login"> <i class="far fa-user-circle"></i></a></div>
-            <div><i class="fas fa-search"></i></div>
+            <div class="flex"><i class="fas fa-search" id="lupa"></i><input type="text" class="input2 tam"></div>
+            
             <div><a href="http://localhost:3031/productos/carrito"><i class="fas fa-shopping-cart"></i></a></div>
             </div>
             <%}%>
