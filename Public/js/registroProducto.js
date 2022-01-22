@@ -1,5 +1,6 @@
 window.addEventListener("load", function() {
 
+    
 
 
     const formulario = document.querySelector("#form-registro")

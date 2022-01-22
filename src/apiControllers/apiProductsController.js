@@ -16,6 +16,7 @@ const Origins = db.Origin;
 const apiProductController = {
     movies: (req,res) => {
         
+        
         let urlProduct = "http://localhost:3031/productos/"
         let arrayProducts = [];
         let generos = {
@@ -34,10 +35,9 @@ const apiProductController = {
             {
                 id: product.id,
                 name: product.title,
-                
-                description: product.sinopsis,
-                
-                relations: ['genres'],
+                image: '/Images/' + product.image,
+                description: product.synopsis,
+                relations: ['genre'],
                 URL: urlProduct + product.id
             }
         ))
@@ -62,7 +62,9 @@ const apiProductController = {
             let dataProducts = {
                 count: e.length,
                 countByCategory: generos,
-                products: arrayProducts
+                products: arrayProducts,
+                
+                
 
             }
             return res.json(dataProducts)
@@ -70,6 +72,19 @@ const apiProductController = {
 
     }
         )
+    },
+
+    generos:(req, res) => {
+    let arrayGeneros = []
+    Genres.findAll()
+    .then((generos) => {
+        generos.forEach(genre => arrayGeneros.push({
+            id:genre.id,
+            name: genre.name,
+        }))
+
+        res.json(arrayGeneros)
+    })
     },
     
     detail: (req, res) => {

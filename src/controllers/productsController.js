@@ -245,7 +245,7 @@ const productController = {
                 calification_id: req.body.calification,
                 length: req.body.length,
                 rating: req.body.rating,
-                synopsis: req.body.sinopsis,
+                synopsis: req.body.synopsis,
                 release_date: req.body.release_date,
                 image: newProductImage
             },
