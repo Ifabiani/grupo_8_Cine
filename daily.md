@@ -13,3 +13,11 @@ WA como medio principal de comunicación. Reunión semanal muy beneficiosa.
 Sprint 6
 
 WA como medio principal de comunicación.
+
+Sprint 7
+
+Seguimos utilizando WhatsApp como medio de comunicación cotidiano.
+
+Sprint 8 
+
+Reuniones para coordinar la exposición final.

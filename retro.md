@@ -46,3 +46,19 @@ Hacer más: juntarnos
 Continuar haciendo: la división de tareas y el trabajo independiente.
 Hacer menos: nada para comentar
 Dejar de hacer: volver a no dejar para lo último las tareas
+
+Retro del Sprint 7
+
+Comenzar a hacer: nada para comentar
+Hacer más: nada para comentar
+Continuar haciendo: la división de tareas y el trabajo independiente.
+Hacer menos: nada para comentar
+Dejar de hacer: nada para comentar
+
+Retro del Sprint 8
+
+Comenzar a hacer: nada para comentar
+Hacer más: nada para comentar
+Continuar haciendo: la división de tareas y el trabajo independiente.
+Hacer menos: nada para comentar
+Dejar de hacer: nada para comentar
